@@ -53,19 +53,11 @@
 
 .infojugador-noticiarugby {
     display: flex;
+    
 }
 
 .imagenjugador img {
     width: 500px;
-    margin-left: 50px;
     margin-top: 150px;
 }
 
-.infojugador { 
-    margin-top: 250px;
-    margin-left: 100px;
-}
-
-.infojugador h1{
-    text-align: center;
-}
