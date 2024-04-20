@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voley</title>
-</head>
-<body>
-    <h1>voley</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/voley.css" />
+  </head>
+  <body>
+    <!-- Navegador -->
+    <header class="navegador">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/assetsprincipal/logotucuman.png"
+              alt="logotucuman"
+              width="85"
+              height="75"
+            />
+          </a>
+          <div>
+            <a href="">About Us</a>
+            <a href="">Free Pages</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel de fotos -->
+    <div class="container">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/assetsVoley/CASM.png" class="d-block w-100" alt="casm" />
+            <h5>Club Atletico San Martín</h5>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/assetsVoley/CAT.png" class="d-block w-100" alt="cat" />
+            <h5>Club Atletico Tucumán</h5>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/assetsVoley/CTG.png" class="d-block w-100" alt="ctg" />
+            <h5>Club Tucumán Gimnasia</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección para la persona destacada y la noticia -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="../assets/assetsVoley/martinRamos.jpg" alt="martinRamos">
+            <div class="card-body">
+              <h5 class="card-title">Persona Destacada</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                eaque dicta inventore laboriosam aspernatur delectus nisi illo,
+                impedit consectetur consequuntur aliquid rerum eligendi
+                possimus. Culpa maiores fuga voluptate in quidem?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="../assets/assetsVoley/torneos.jpg" alt="torneos">
+            <div class="card-body">
+              <h5 class="card-title">Noticia</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                eaque dicta inventore laboriosam aspernatur delectus nisi illo,
+                impedit consectetur consequuntur aliquid rerum eligendi
+                possimus. Culpa maiores fuga voluptate in quidem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
