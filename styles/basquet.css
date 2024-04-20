@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.news-basquet{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+.card{
+    height: 500px;
+}
+.carousel{
+    height: 500px;
+    width: 400px;
+    margin-right: 10px;
+}
+.carousel-item{
+    width: 400px;
+    object-fit: contain;
+}
+.tournament{
+    padding: 25px;
+    margin-left: 25px;
+}
+.fixture-zone{
+    display: flex;
+    justify-content: space-around;
+}
+.tournament h2{
+    width: 100%;
+    text-align: center;
+}
+.card-team{
+    width: 450px;
+    height: 180px;
+}
+.cards-teams{
+    display: flex;
+    justify-content: space-around;
+}
