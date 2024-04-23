@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://kit.fontawesome.com/8f43e9aea4.js" crossorigin="anonymous"></script>
     <title>Deportes - Tuc</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,26 +12,169 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-</head>
-<body>
-     <!-- Navegador -->
-     <header class="navegador">
-        <nav class="navbar bg-body-tertiary"  >
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./assets/logotucuman.png" alt="logotucuman" width="85" height="75">
-              </a>
-            </div>  
-            <div>
-            <a href="">About Us</a>
-            <a href="">Free Pages</a>
-            </div>
-          </nav>
-        </header>
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-</body>
+  </head>
+  <body>
+    <!-- Navegador -->
+    <header class="navegador">
+      <a id="home"></a>
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/assetsprincipal/tuc-azul.png" alt="logotucuman" width="95" height="85" >
+          </a>
+          </div>
+          <ul class="menu_list">
+            <li class="list_item"><a href="" class="link">About Us</a></li>
+            <li class="list_item"><a href="" class="link">Free Page</a></li>
+          </ul>
+      </nav>
+    </header>
+<!-- Seccion 1 -->
+    <section class="titulo">
+        <h1> 
+        DEPORTES
+        </h1>
+    </section><br>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="./assets/assetsprincipal/3_deportistas.jpg" class="d-block w-50 mx-auto fondoImg1" alt="deportistas tucumanos">
+          <div class="carousel-caption">
+            <h4>Deportistas Tucumanos</h4>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assets/assetsprincipal/palacio_de_deportes_2.jpg" class="d-block w-50 mx-auto fondoImg2" alt="Palacio de los deportes">
+          <div class="carousel-caption">
+            <h4>Palacio de los Deportes</h4>
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assets/assetsprincipal/tucumanos_olimpicos.jpg" class="d-block w-50 mx-auto fondoImg3" alt="Tucumanos Olimpicos">
+          <div class="carousel-caption">
+            <h4>Tucumanos en los juegos Olimpicos</h4>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assets/assetsprincipal/deportistas_del_año_2023.jpg" class="d-block w-50 mx-auto fondoImg4" alt="Deportistas del año 2023">
+          <div class="carousel-caption">
+            <h4>Premiacion deportistas del año 2023</h4>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assets/assetsprincipal/clasico_tucumano_futbol.jpg" class="d-block w-50 mx-auto fondoImg5" alt="Clasico tucumano de futbol">
+          <div class="carousel-caption">
+            <h5>Clasico Tucumano de Futbol</h5>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assets/assetsprincipal/secretaria_de_deportes.jpeg" class="d-block w-50 mx-auto" alt="Secretaria de deportes">
+          <div class="carousel-caption">
+            <h3>Secretaria de deportes, San Miguel de Tucumán</h3>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!-- seccion2 -->
+    <section class="iframes">
+        <iframe width="620" height="315" src="https://www.youtube.com/embed/JYxfUU5J1mI?autoplay=1&mute=1&si=QmaztyHFMvZhtVNF" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.060202312216!2d-65.1988671!3d-26.8394736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225dbca3b70ebb%3A0x754b05bf3f205dbe!2sSecretar%C3%ADa%20de%20estado%20de%20deportes!5e0!3m2!1ses-419!2sar!4v1712790578156!5m2!1ses-419!2sar" width="620" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div class="text">
+        <h2>
+            Tucumán es un destino nato para la práctica de deportes. Nuestra provincia te ofrece escenarios de increíble belleza para que lleves a cabo las más variadas actividades. Desde fútbol, el deporte más típico del país, hasta la práctica de deportes extremos.  
+        </h2>
+        <h3>Encontrá toda la información necesaria y animate a vivir una experiencia increíble.</h3>
+    </div>
+
+<!-- cartas -->
+<div class="cartas1">
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/assetsprincipal/futbol.jpg" class="card-img-top" alt="Futbol">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Futbol</h5> -->
+          <p class="card-text">La Liga Tucumana de Fútbol es una liga regional de fútbol Argentino que agrupa a los equipos de la Provincia de Tucumán, tiene su sede en la ciudad de San Miguel de Tucumán.</p>
+          <a href="#" class="btn btn-primary">Futbol</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/assetsprincipal/basquet.avif" class="card-img-top" alt="Basquet">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Basquet</h5> -->
+          <p class="card-text">Asociación de Basquet tucumano engloba los mejores equipos y jugadores tucumanos que compiten a nivel provincial y regional.</p>
+          <a href="#" class="btn btn-primary">Basquet</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/assetsprincipal/voley.avif" class="card-img-top" alt="Voley">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Voley</h5> -->
+          <p class="card-text">Federacion tucumana de voleibol administra de manera transitoria el voleibol tucumano. Actualmente rige y organiza ambos seleccionados provinciales.</p>
+          <a href="#" class="btn btn-primary">Voley</a>
+        </div>
+      </div>
+</div>
+<div class="cartas2">
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/assetsprincipal/rugby.jpg" class="card-img-top" alt="Rugby">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Rugby</h5> -->
+          <p class="card-text">La Unión de Rugby de Tucumán (URT) controla el juego de rugby en la provincia de Tucumán. Organiza el Torneo Regional del Noroeste, competición en la que participan también clubes de provincias vecinas.</p>
+          <a href="#" class="btn btn-primary">Rugby</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/assetsprincipal/hockey.jpg" class="card-img-top" alt="Hockey">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Hockey</h5> -->
+          <p class="card-text">La Asociación tucumana de hockey (atahockey) se encarga de organizar y acompañar a jovenes de nuestra provicia. Ademas organiza torneos a lo largo del norte de nuestro pais y forma a jugadores del seleccionado provincial.</p>
+          <a href="#" class="btn btn-primary">Hockey</a>
+        </div>
+      </div>
+</div>
+<!-- Footer -->
+<div class="img-footer">
+</div>
+<footer>
+  <a href="#home" class="logo-verde" >
+    <img src="./assets/assetsprincipal/tuc-azul.png" alt="logo-tucuman-verde"> </a>
+    <div class="red-social borde">
+      <a href="#" target="_blank" class="fa fa-github"></a>
+      <a href="#" target="_blank" class="fa fa-linkedin"></a>
+      <a href="#" target="_blank" class="fa fa-github"></a>
+      <a href="#" target="_blank" class="fa fa-linkedin"></a>
+      <a href="#" target="_blank" class="fa fa-github"></a>
+      <a href="#" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <div class="linea-vertical">
+      <div class="contenedor">
+        <ul>Yazmin Aguirre / Correo electronico</ul><br>
+        <ul>Camila Prado / Correo electronico</ul><br>
+        <ul>Ramiro Sorroza / RamiroSorroza@gmail.com</ul><br>
+        <ul>Jorge Palomar / Correo electronico</ul><br>
+        <ul>Franco Zim / Correo electronico</ul><br>
+        <ul>Valentino Lencina / Correo electronico</ul><br>
+      </div>
+
+    </div>
+ 
+  <div class="grupo">
+    <small>&copy; 2024 <b>Grupo Deportes</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
