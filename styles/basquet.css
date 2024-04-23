@@ -1,42 +1,95 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
-.news-basquet{
+body{
     display: flex;
     justify-content: center;
-    padding: 25px;
 }
-.card{
-    height: 500px;
-}
-.carousel{
-    height: 500px;
-    width: 400px;
-    margin-right: 10px;
-}
-.carousel-item{
-    width: 400px;
-    object-fit: contain;
-}
-.tournament{
-    padding: 25px;
-    margin-left: 25px;
-}
-.fixture-zone{
+main{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
-.tournament h2{
+.banner-basquet{
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+
 }
-.card-team{
-    width: 450px;
+.banner-basquet img{
+    height: 100%;
+    width: 1200px;
+}
+.carousel-news{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px
+}
+.carousel-basquet{
+    width: 400px;
+}
+.card-news{
+    width: 700px;
     height: 180px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
-.cards-teams{
+.card-news p{
+    font-size: small;
+}
+.card-news img{
+    height: 100%;
+}
+.teams-basquet{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+.carousel-teams{
+    width: 500px;
+}
+.logos-sponsors a img{
+    width: 150px;
+    height: 100px;
+}
+.container {
+    overflow: hidden;
+    .slider {
+      animation: slidein 30s linear infinite;
+      white-space: nowrap;
+      .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0;
+        .fab {
+          width: calc(100% / 5);
+          animation: fade-in  
+            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        }
+      }
+    }
+  }
+  
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
