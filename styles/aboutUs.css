@@ -4,22 +4,22 @@
     display: flex;
     flex-direction: column;
 }
-
-.navbar{
-    background-color: #cad2c5;
+nav{
+  background-color: #22333B;
 }
+
 .navegador a {
     font-size: 30px;
     margin-right: 60px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
-body {
-    background: linear-gradient(#52796f,  #84a98c);
-    color: #fff;
-  }
+body{
+  background: linear-gradient(#EAE0D5, #22333B, #22333B);
+  color: white;
+}
 
   .team-member {
     margin-bottom: 20px;
@@ -43,7 +43,7 @@ body {
   }
 
   .card-body a:hover{
-    color: #84a98c;
+    color: #22333B;
     transform: scale(1.2);
     transition: 0.5s;
   }
