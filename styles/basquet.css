@@ -1,42 +1,96 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 }
-.news-basquet{
-    display: flex;
-    justify-content: center;
-    padding: 25px;
+.banner-basquet{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
 }
-.card{
-    height: 500px;
+.banner-basquet img{
+  height: 100%;
+  width: 1200px;
 }
-.carousel{
-    height: 500px;
-    width: 400px;
-    margin-right: 10px;
+.card-section{
+  margin-top: 50px;
+  width: 1600px;
+  display: flex;
+  justify-content: center;
 }
-.carousel-item{
-    width: 400px;
-    object-fit: contain;
+.card-news{
+  height: 400px;
+  width: 250px;
+  margin: 25px;
+  font-weight: bolder;
 }
-.tournament{
-    padding: 25px;
-    margin-left: 25px;
+.card-news img{
+  height: 400px;
 }
-.fixture-zone{
-    display: flex;
-    justify-content: space-around;
+.card-news h5{
+  margin-top: 200px;
 }
-.tournament h2{
-    width: 100%;
-    text-align: center;
+.text-news{
+  color: transparent;
 }
-.card-team{
-    width: 450px;
-    height: 180px;
+.text-news :hover{
+  color: white;
+  transition: 2s;
+  transform: scale(1.1);
 }
-.cards-teams{
-    display: flex;
-    justify-content: space-around;
+
+.carouselequiposrugby{
+  display: flex;
+  justify-content: center;
+  
+}
+.carousel-item img {
+  object-fit: contain;
+  width: 1300px;
+  height: 400px;
+}
+
+.carousel-item h5 {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.titulosectionrugby {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+}
+
+.carousel-control-prev {
+  margin-top: 200px;
+}
+
+.carousel-control-next {
+  margin-top: 200px;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 10px 10px;
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 10px 10px;
+}
+.navegador a {
+  font-size: 30px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: black;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+.map{
+  height: 400px;
 }
