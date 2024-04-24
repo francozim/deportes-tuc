@@ -1,0 +1,72 @@
+.navegador{
+    display: flex;
+    flex-direction: column;
+}
+
+.navegador a {
+    font-size: 30px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: black;
+}
+
+.carouselequiposrugby{
+    display: flex;
+    justify-content: center;
+    
+}
+.carousel-item img {
+    object-fit: contain;
+    width: 1300px;
+    height: 400px;
+}
+
+.carousel-item h5 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.titulosectionrugby {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+.carousel-control-prev {
+    margin-top: 200px;
+}
+
+.carousel-control-next {
+    margin-top: 200px;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 10px 10px;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 10px 10px;
+}
+
+.infojugador-noticiarugby {
+    display: flex;
+}
+
+.imagenjugador img {
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.infojugador { 
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.infojugador h1{
+    text-align: center;
+}
