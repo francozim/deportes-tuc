@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#EAE0D5, #22333B, #22333B);
+    background: linear-gradient(#faeee3, #22333B, #233040, #233040);
  }
  /* NAV */
  .navegador{
@@ -23,7 +23,7 @@ body{
  .menu_list{
      margin-top:0%;
      text-align: center;
-     margin-left: 900px;
+     margin-left: 1300px;
      margin-top: -70px;
  
  }
@@ -65,8 +65,7 @@ body{
  }
  .titulo{
      color: #fff;
-     /* text-transform: uppercase; */
-     background-image: linear-gradient(-250deg, #000000 0%, #e6d8ec 50%, #857878 100%);
+     background-image: linear-gradient(-250deg, #000000 0%, #b8b2bb 50%, #524f4f 100%);
      background-size: auto auto;
      background-clip: border-box;
      background-size: 200% auto;
@@ -98,6 +97,11 @@ body{
  }
  .carousel-caption h4{
      margin-top: 300000px;
+ }
+ .carrusel-config{
+    height: 600px;
+    display: flex;
+    align-items: center;
  }
  .fondoImg1{
      padding-top: 40px; 
@@ -135,14 +139,25 @@ body{
      margin: 50px; 
      padding-top: 70px;
      text-align: center;
-     color: rgb(255, 255, 255);
+     color: rgb(2, 2, 2);
+     text-shadow:     -1px -1px 0 #ffff,  
+                       1px -1px 0 #ffff,
+                      -1px  1px 0 #ffff,
+                       1px  1px 0 #ffff;
  }
  .text h3 {
      margin: 50px; 
      text-align:center;
      margin-left: 75px;
-     color: rgb(255, 255, 255);
+     text-shadow:     -1px -1px 0 #ffff,  
+                       1px -1px 0 #ffff,
+                      -1px  1px 0 #ffff,
+                       1px  1px 0 #ffff;
      
+ }
+ .card{
+    background-color: #faeee3 !important;
+    border: 5px solid black !important;
  }
  .cartas1 {
      display: flex;
@@ -156,18 +171,35 @@ body{
      margin-bottom: 50px;
      margin-left: 300px;
      margin-right: 300px;
+     
  }
  .cartas1 div{
      align-items: center center;
  }
  .card-body{
      text-align: center;
+     background-color: #faeee3;
  }
  .card img{
      height: 200px;
      width: 200px;
      margin: 20px;
      margin-left: 55px;
+     background-color: #faeee3;
+     align-items: center;
+ }
+ .card-body a{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: #000000;
+    color: #f3f3f3;
+ }
+ .card-body a:hover{
+    transform: scale(1.2);
+    transition: width 0.3s ease, height 0.3s ease;
+    border: 2px solid black;
+    background-color: #000000;
+    color: #f3f3f3;
  }
  /* FOOTER */
  .img-footer {
@@ -175,7 +207,7 @@ body{
      background-size: cover;
      background-position: center ;
      padding: 200px;
-     background-color:  #233040;
+     /* background-color:  #233040; */
  }
  footer{
      background-color: #233040;
@@ -186,22 +218,22 @@ body{
  }
  .logo-verde img{
      border-radius: 75px;
-     height: 120px;
-     width: 120px;
-     margin-left: 500px;
-     margin-top: 60px;
+     height: 140px;
+     width: 140px;
+     margin-left: 650px;
+     margin-top: 55px;
  }
  .linea-vertical{
      width: 2px;
-     height: 425px;
+     height: 465px;
      background-color: antiquewhite;
-     margin-left: 1000px;
-     margin-top: -420px;
+     margin-left: 1400px;
+     margin-top: -300px;
  }
  .linea-vertical ul{
      color: aliceblue;
      margin-left: 20px;
-     font-size: 14px;   
+     font-size: 16px;   
     
  }
  .contenedor{
@@ -217,7 +249,7 @@ body{
      text-decoration: none;
      display: flex;
      margin-top: 120px;
-     margin-left: 200px;
+     margin-left: 370px;
  }
  .red-social a{
      color: antiquewhite;
