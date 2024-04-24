@@ -1,11 +1,15 @@
 body{
-    background-color: #F0F0F0 !important;
+    background: linear-gradient(#EAE0D5, #22333B, #22333B);
  }
  /* NAV */
  .navegador{
      display: flex;
      flex-direction: column;
  }
+
+ nav{
+    background-color: #22333B;
+}
  .navbar-brand img{
      border-radius: 30px;
  }
@@ -13,7 +17,7 @@ body{
      font-size: 30px;
      margin-right: 60px;
      text-decoration: none;
-     color: black;
+     color: rgb(255, 255, 255);
      margin-top: -3px;
  }
  .menu_list{
@@ -38,7 +42,7 @@ body{
      content: "";
      width: 0;
      height: 4px;
-     background-color: black;
+     background-color: rgb(255, 255, 255);
      position: absolute;
      bottom: 0;
      right: 50%;
@@ -131,11 +135,14 @@ body{
      margin: 50px; 
      padding-top: 70px;
      text-align: center;
+     color: rgb(255, 255, 255);
  }
  .text h3 {
      margin: 50px; 
-     text-align:left;
+     text-align:center;
      margin-left: 75px;
+     color: rgb(255, 255, 255);
+     
  }
  .cartas1 {
      display: flex;
@@ -164,13 +171,14 @@ body{
  }
  /* FOOTER */
  .img-footer {
-     background-image: url('../assets/assetsprincipal/silueta-motañas.jpg'); 
+     background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
      background-size: cover;
      background-position: center ;
      padding: 200px;
+     background-color:  #233040;
  }
  footer{
-     background-color: rgb(35,48,64);
+     background-color: #233040;
      padding: 200px 0;
      padding-top: 0;
      padding-bottom: 20px;
