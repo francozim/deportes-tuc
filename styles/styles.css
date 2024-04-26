@@ -65,7 +65,7 @@ body{
  }
  .titulo{
      color: #fff;
-     background-image: linear-gradient(-250deg, #000000 0%, #b8b2bb 50%, #524f4f 100%);
+     background-image: linear-gradient(-250deg, #000000 0%, #535151 50%, #050505 100%);
      background-size: auto auto;
      background-clip: border-box;
      background-size: 200% auto;
@@ -76,6 +76,9 @@ body{
  }
  .titulo h1{
      font-size: 50px;
+ }
+ .titulo h2{
+    font-size: 40px;
  }
  @keyframes bgText{
      to {
@@ -129,11 +132,11 @@ body{
      background-color: transparent;
  }
  .boton{
-     color: #000; /* Color de los iconos a negro */
+     color: #000; 
      width: 300px;
  }
  .custom-carousel-control span:hover {
-     background-color: rgba(255, 255, 255, 0.7); /* Cambia el color de fondo al pasar el mouse */
+     background-color: rgba(255, 255, 255, 0.7); 
  }
  .text h2 {
      margin: 50px; 
@@ -149,12 +152,23 @@ body{
      margin: 50px; 
      text-align:center;
      margin-left: 75px;
+     color: rgb(2, 2, 2);
      text-shadow:     -1px -1px 0 #ffff,  
                        1px -1px 0 #ffff,
                       -1px  1px 0 #ffff,
                        1px  1px 0 #ffff;
      
  }
+.text h4{
+    margin-left: -150px ;
+    margin-right: 100px;
+    margin-top: 100px;
+    color: black ;
+    text-shadow:     -1px -1px 0 #ffff,  
+                       1px -1px 0 #ffff,
+                      -1px  1px 0 #ffff,
+                       1px  1px 0 #ffff;
+}
  .card{
     background-color: #faeee3 !important;
     border: 5px solid black !important;
@@ -195,12 +209,56 @@ body{
     color: #f3f3f3;
  }
  .card-body a:hover{
-    transform: scale(1.2);
-    transition: width 0.3s ease, height 0.3s ease;
+    transition: 0.2s;
+    transform:scale(1.2);;
     border: 2px solid black;
     background-color: #000000;
     color: #f3f3f3;
  }
+ /*CARRUSEL DE SPONSORS*/
+@keyframes slide{
+    from{
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .carousel-sponsors{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  .carousel-sponsors:before,
+  .carousel-sponsors:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  .carousel-sponsors:before { 
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #233040);
+  }
+  .carousel-sponsors:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), #233040);
+  }
+  .carousel-sponsors{
+    animation-play-state: paused;
+  }
+  .logos-slide {
+    display: inline-block;
+    animation: 50s slide infinite linear;
+  }
+  .logos-slide img{
+    border-radius: 5px;
+    height: 50px;
+    margin: 0 40px;
+  }
  /* FOOTER */
  .img-footer {
      background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
