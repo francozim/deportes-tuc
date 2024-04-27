@@ -1,137 +1,211 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
-body{
-    background-color: #0AA092;
-}
-
-.titulo {
-    transition: all 0.3s;
-  }
-  
-  .titulo:hover {
-    color:#FA770F; 
+  body{
+    background: linear-gradient(#eae0d5, #22333b, #22333b);
+    color: white;
   }
 
-h1{
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-    margin: 20px;
-    padding:20px;
+.banner-hockey{
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+.banner-hockey img{
+  height: 100%;
+  width: 1200px;
+  }
+.card-section{
+margin-top: 50px;
+margin-bottom: 150px;
+width: 1600px;
+display: flex;
+justify-content: center;
+}
+.card-news{
+height: 400px;
+width: 250px;
+margin: 25px;
+
+}
+.card-news img{
+height: 350px;
+}
+.text-news{
+color: transparent;
+}
+.text-news :hover{
+color: white;
+transition: 2s;
+transform: scale(1.1);
+}
+/*CAROUSEL*/
+.carouselequiposhockey{
+display: flex;
+justify-content: center;
+}
+.carousel-item img {
+object-fit: contain;
+width: 1300px;
+height: 400px;
+}
+.carousel-item h5 {
+text-align: center;
+margin-top: 50px;
+font-weight: bold;
+}
+.titulosectionhockey {
+text-align: center;
+margin-top: 70px;
+margin-bottom: 70px;
+}
+.carouselequiposhockey button{
+margin-top: 950px;  
+}
+.carousel-control-prev-icon {
+background-color: black;
+border-radius: 10px 10px;
+}
+.carousel-control-next-icon {
+background-color: black;
+border-radius: 10px 10px;
 }
 
+.navegador a {
+  font-size: 30px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: black;
+  }
+
+.social{
+display: flex;
+justify-content: center;
+}
+.map{
+height: 400px;
+}
+/*CARRUSEL DE SPONSORS*/
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carousel-sponsors{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.carousel-sponsors:before { 
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #233040);
+}
+.carousel-sponsors:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #233040);
+}
+.carousel-sponsors{
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+.logos-slide img{
+  border-radius: 5px;
+  height: 50px;
+  margin: 0 40px;
+}
+
+
+  /* footer */
+
+  /* Estilos generales del footer */
+  .img-footer {
+      background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+      background-size: cover;
+      background-position: center ;
+      padding: 200px;
+    
+  }
   
-.main-container{
-    display: flex;
-    align-items: center;
-}
-
-.carousel{
-    width: 30px; 
-    overflow: hidden;
-}
-
-.club{
-    width: 80px;
-    height: 80px;
-}
-
-h2{
-    text-align: center;
-    font-size: 25px;
-    margin: 25px;
-    padding: 25px;
-
-}
-
-ul{
-    display: flex;
-    list-style: none;
-    animation: slide 20s infinite linear;
-}
-
-.container{
-    height: 50vh;
-    width: 20px;
-    display: grid;
-    place-content: center;
-}
-
-
-h3{
-    text-align: center;
-    font-size: 20px;
-}
-
-
-.image{
-    height: 350px;
-    width: 350px;
-    justify-content: center;
-}
-
-.card {
-        background-color:#A8BFBD;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  footer{
+      background-color: #22333b;
+      padding: 40px 0 20px; 
+  }
+  
+  /* Estilos para el logo */
+  .logo-verde img{
+      display: block; 
+      margin: 0 auto; 
+      border-radius: 50%; 
+      height: 140px;
+      width: 140px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+  }
+  
+  .red-social{
+      display: flex;
+      justify-content: center; 
+      margin-top: 20px;
+      margin-bottom: 60px;
+  }
+  
+  .red-social-item {
+      text-align: center;
+      margin: 0 15px; 
+     
+  }
+  
+  .red-social a{
+      color: antiquewhite;
+      text-decoration: none;
+      margin: 0 15px; 
+      font-size: 20px; 
+  }
+  
+  .nombre {
+      color: white;
+      font-size: 14px; 
+      display: block;
+      margin-bottom: 5px; 
+      font-size: 17px;
+  }
+  
+  .grupo{
+      text-align: center;
+      color: white;
+      margin-top: 20px; 
+      font-size: 18px; 
+  }
+  
+  @media (max-width: 768px) {
+      .red-social {
+          flex-direction: column; 
+          align-items: center; 
+          margin-top: 10px; 
       }
-
-
-      @keyframes slide {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
-        150% { transform: translateX(-200%); }
-        180% { transform: translateX(-300%); }
-        200% { transform: translateX(-400%); }
-
+  
+      .red-social a {
+          margin: 5px 0; 
       }
-
-      .information{
-        display: flex;
-        padding: 150px;
-        justify-content: space-around;
-      }
-
-      .card {
-        max-width: 300px;
-        background-color: #AB9C91;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      
-      .card img {
-        width: 100%;
-        height: auto; 
-      }
-      
-      .card-content {
-        padding: 20px; 
-      }
-      
-      .card-content h2 {
-        margin-top: 0; 
-      }
-      
-      .card-content p {
-        margin-bottom: 15px; 
-      }
-      
-      .card-content a {
-        display: inline-block;
-        background-color:#5E5C5B; 
-        color:black; 
-        padding: 8px 16px;
-        text-decoration: none;
-        border-radius: 4px; 
-      }
-      
-      .card-content a:hover {
-        background-color:#FA770F; 
-      }
+  }
+  
