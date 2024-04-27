@@ -7,14 +7,13 @@ body {
  .navegador{
   display: flex;
   flex-direction: column;
+  background-color: #22333B;
 }
 
 nav{
  background-color: #22333B;
 }
-.navbar-brand img{
-  border-radius: 30px;
-}
+
 .navegador a {
   font-size: 30px;
   margin-right: 60px;
@@ -29,47 +28,32 @@ nav{
   margin-top: -70px;
 
 }
-.list_item{
-  display: inline-block;
-  list-style: none;
+
+.navbar-toggler {
+  border-color: white; /* Color del borde del botón */
 }
-.link{
-  text-decoration: none;
-  color: inherit;
-  padding: 10px;
-  font-size: 1.1rem;
-  position: relative;
+
+.fas {
+  color: white;
 }
-.link::after{
-  content: "";
-  width: 0;
-  height: 4px;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transition: all .5s;
-  will-change:  width;
-}
-.link:hover:after{
-  width: 100%;
-  right: 0;
-}
+
+
   
   /* banner */
   
   .bannerVoley {
     display: flex;
     justify-content: center;
-    background-image: url('../assets/assetsVoley/federacionVoley.jpg'); 
+    background-image: url('../assets/assetsVoley/federacionVoley.jpg');
     background-size: cover;
-    background-position: center ;
-    padding: 300px;
+    background-position: center;
+    padding-bottom: 550px; /* Reduje el padding para que sea más responsive */
     width: 100%;
   }
-
-  .bannerVoley img{
-    width: 1164px;
+  
+  .bannerVoley img {
+    max-width: 100%; /* Asegúrate de que la imagen no se desborde en pantallas pequeñas */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
   }
   
   /* carousel */
@@ -152,61 +136,50 @@ nav{
   }
   
   /*CARRUSEL DE SPONSORS*/
-  @keyframes slide{
-      from{
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-100%);
-      }
+  
+@keyframes slide{
+    from{
+      transform: translateX(0);
     }
-    .carousel-sponsors{
-      overflow: hidden;
-      padding: 60px 0;
-      white-space: nowrap;
-      position: relative;
-      width: 1903px;
+    to {
+      transform: translateX(-100%);
     }
-    .carousel-sponsors:before,
-    .carousel-sponsors:after{
-      position: absolute;
-      top: 0;
-      width: 250px;
-      height: 100%;
-      content: "";
-      z-index: 2;
-    }
-    .carousel-sponsors:before { 
-      left: 0;
-      background: linear-gradient(to left, rgba(255,255,255,0), #233040);
-    }
-    .carousel-sponsors:after{
-      right: 0;
-      background: linear-gradient(to right, rgba(255,255,255,0), #233040);
-    }
-    .carousel-sponsors{
-      animation-play-state: paused;
-    }
-    .logos-slide {
-      display: inline-block;
-      animation: 50s slide infinite linear;
-    }
-    .logos-slide img{
-      border-radius: 5px;
-      height: 50px;
-      margin: 0 40px;
-    }
-    
-    @media (max-width: 768px) {
-      .carousel-sponsors {
-        padding: 30px 0; /* Reducir el padding superior e inferior */
-      }
-      
-      .logos-slide img {
-        height: 30px; /* Reducir la altura de las imágenes */
-        margin: 0 10px; /* Reducir el margen entre las imágenes */
-      }
-    }
+  }
+  .carousel-sponsors{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  .carousel-sponsors:before,
+  .carousel-sponsors:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  .carousel-sponsors:before { 
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #233040);
+  }
+  .carousel-sponsors:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), #233040);
+  }
+  .carousel-sponsors{
+    animation-play-state: paused;
+  }
+  .logos-slide {
+    display: inline-block;
+    animation: 50s slide infinite linear;
+  }
+  .logos-slide img{
+    border-radius: 5px;
+    height: 50px;
+    margin: 0 40px;
+  }
     
   
     /* footer */
