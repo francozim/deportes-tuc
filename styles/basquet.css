@@ -3,6 +3,65 @@
     padding: 0;
     box-sizing: content-box;
 }
+
+/* NAV */
+.navegador{
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+ background-color: #22333B;
+}
+.navbar-brand img{
+  border-radius: 30px;
+}
+.navegador a {
+  font-size: 30px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: -3px;
+}
+.menu_list{
+  margin-top:0%;
+  text-align: center;
+  margin-left: 1300px;
+  margin-top: -70px;
+
+}
+.list_item{
+  display: inline-block;
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  font-size: 1.1rem;
+  position: relative;
+}
+.link::after{
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change:  width;
+}
+.link:hover:after{
+  width: 100%;
+  right: 0;
+}
+.data-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 .banner-basquet{
   width: 100%;
   display: flex;
@@ -15,82 +74,179 @@
 }
 .card-section{
   margin-top: 50px;
-  width: 1600px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .card-news{
   height: 400px;
-  width: 250px;
-  margin: 25px;
-  font-weight: bolder;
+  width: 300px;
+  margin: 25px; 
+  margin-bottom: 150px;
 }
 .card-news img{
-  height: 400px;
+  height: 350px;
 }
-.card-news h5{
-  margin-top: 200px;
+.card-body{
+  height: 150px;
 }
-.text-news{
-  color: transparent;
-}
-.text-news :hover{
-  color: white;
-  transition: 2s;
-  transform: scale(1.1);
-}
-
+/*CAROUSEL*/
 .carouselequiposrugby{
   display: flex;
   justify-content: center;
-  
 }
 .carousel-item img {
   object-fit: contain;
   width: 1300px;
   height: 400px;
 }
-
 .carousel-item h5 {
   text-align: center;
   margin-top: 50px;
   font-weight: bold;
 }
-
 .titulosectionrugby {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 70px;
-
 }
-
-.carousel-control-prev {
-  margin-top: 200px;
+.carouselequiposrugby button{
+  margin-top: 950px;  
 }
-
-.carousel-control-next {
-  margin-top: 200px;
-}
-
 .carousel-control-prev-icon {
   background-color: black;
   border-radius: 10px 10px;
 }
-
 .carousel-control-next-icon {
   background-color: black;
   border-radius: 10px 10px;
 }
-.navegador a {
-  font-size: 30px;
-  margin-right: 60px;
-  text-decoration: none;
-  color: black;
-}
+
 .social{
   display: flex;
   justify-content: center;
 }
 .map{
   height: 400px;
+}
+/*SOCIAL*/
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*CARRUSEL DE SPONSORS*/
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carousel-sponsors{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.carousel-sponsors:before { 
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+.carousel-sponsors:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+.carousel-sponsors{
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+.logos-slide img{
+  height: 50px;
+  margin: 0 40px;
+}
+ /* FOOTER */
+ .img-footer {
+  background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+  background-size: cover;
+  background-position: center ;
+  padding: 200px;
+
+}
+
+footer{
+  background-color: #22333b;
+  padding: 40px 0 20px; 
+}
+
+/* Estilos para el logo */
+.logo-verde img{
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 50%; 
+  height: 140px;
+  width: 140px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.red-social{
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.red-social-item {
+  text-align: center;
+  margin: 0 15px; 
+ 
+}
+
+.red-social a{
+  color: antiquewhite;
+  text-decoration: none;
+  margin: 0 15px; 
+  font-size: 20px; 
+}
+
+.nombre {
+  color: white;
+  font-size: 14px; 
+  display: block;
+  margin-bottom: 5px; 
+  font-size: 17px;
+}
+
+.grupo{
+  text-align: center;
+  color: white;
+  margin-top: 20px; 
+  font-size: 18px; 
+}
+
+@media (max-width: 768px) {
+  .red-social {
+      flex-direction: column; 
+      align-items: center; 
+      margin-top: 10px; 
+  }
+
+  .red-social a {
+      margin: 5px 0; 
+  }
 }

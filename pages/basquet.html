@@ -9,28 +9,24 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://kit.fontawesome.com/8f43e9aea4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/basquet.css" />
     <title>Basquet</title>
   </head>
   <body>
-    <!-- Navegador -->
-    <header class="navegador">
-      <nav class="navbar bg-body-tertiary">
+     <!-- Navegador -->
+     <header class="navegador">
+      <a id="home"></a>
+    <nav class="navbar " >
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="../assets/assetsprincipal/logotucuman.png"
-              alt="logotucuman"
-              width="85"
-              height="75"
-            />
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/assetsprincipal/tuc-azul-removebg-preview.png" alt="logotucuman" width="95" height="85" >
           </a>
-          <div>
-            <a href="">About Us</a>
-            <a href="">Free Pages</a>
           </div>
-        </div>
+          <ul class="menu_list">
+            <li class="list_item"><a href="./aboutUs.html" class="link">About Us</a></li>
+            <li class="list_item"><a href="" class="link">Free Page</a></li>
+          </ul>
       </nav>
     </header>
   
@@ -129,43 +125,136 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+      
   </section>
-      <!-- CARDS DE NOTICIAS -->
-    <div class="card-section">  
-      <div class="card text-bg-dark card-news">
-        <img src="../assets/assets-basquet/Superliga-fecha1.png" class="card-img" alt="...">
-        <div class="card-img-overlay text-news">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <!-- CARDS DE NOTICIAS -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 card-section">
+      <div class="card-news">
+        <div class="card">
+          <img src="../assets/assets-basquet/Superliga-fecha1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
         </div>
       </div>
-      <div class="card text-bg-dark card-news">
-        <img src="../assets/assets-basquet/superliga-equipos-primera.png" class="card-img" alt="...">
-        <div class="card-img-overlay text-news">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>          
+      <div class="card-news">
+        <div class="card">
+          <img src="../assets/assets-basquet/superliga-equipos-primera.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
         </div>
       </div>
-      <div class="card text-bg-dark card-news">
-        <img src="../assets/assets-basquet/superliga.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay text-news">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>          
+      <div class="card-news">
+        <div class="card">
+          <img src="../assets/assets-basquet/superliga.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
         </div>
       </div>
-      <div class="card text-bg-dark card-news">
-        <img src="../assets/assets-basquet/noticias.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay text-news">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div class="card-news">
+        <div class="card">
+          <img src="../assets/assets-basquet/noticias.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
         </div>
       </div>
-    </div> 
+    </div>
      <!-- IFRAMES VIDEO + MAPA -->
     <div class="social">
-     <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/vXOAZJvEEXA?si=AQGkZRYmwfzMZVe9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d445.00369172907523!2d-65.22150679467082!3d-26.83901293129964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c7177552075%3A0x13e1f1706d9199b0!2sAv.%20Alem%20792%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1713842815059!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/vXOAZJvEEXA?si=AQGkZRYmwfzMZVe9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d445.00369172907523!2d-65.22150679467082!3d-26.83901293129964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c7177552075%3A0x13e1f1706d9199b0!2sAv.%20Alem%20792%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1713842815059!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    
+    <!-- CARRUSEL DE SPONSORS -->
+    <div class="carousel-sponsors">
+      <div class="logos-slide">
+        <img src="../assets/assets-basquet/VISA.png" alt="Logo VISA">
+        <img src="../assets/assets-basquet/nike.jpg" alt="Logo NIKE">
+        <img src="../assets/assets-basquet/TCL.png" alt="Logo TCL">
+        <img src="../assets/assets-basquet/tissot.png" alt="Logo TISSOT">
+        <img src="../assets/assets-basquet/j9.png" alt="Logo J9">
+        <img src="../assets/assets-basquet/molten.png" alt="Logo Molten">
+        <img src="../assets/assets-basquet/wanda-group.jpg" alt="Logo Wanda Group">
+        <img src="../assets/assets-basquet/ESPN.png" alt="Logo ESPN">
+        <img src="../assets/assets-basquet/fiba.jpg" alt="Logo FIBA">
+        <img src="../assets/assets-basquet/kelme.png" alt="Logo Kelme">
+      </div>
+      <div class="logos-slide">
+        <img src="../assets/assets-basquet/VISA.png" alt="Logo VISA">
+        <img src="../assets/assets-basquet/nike.jpg" alt="Logo NIKE">
+        <img src="../assets/assets-basquet/TCL.png" alt="Logo TCL">
+        <img src="../assets/assets-basquet/tissot.png" alt="Logo TISSOT">
+        <img src="../assets/assets-basquet/j9.png" alt="Logo J9">
+        <img src="../assets/assets-basquet/molten.png" alt="Logo Molten">
+        <img src="../assets/assets-basquet/wanda-group.jpg" alt="Logo Wanda Group">
+        <img src="../assets/assets-basquet/ESPN.png" alt="Logo ESPN">
+        <img src="../assets/assets-basquet/fiba.jpg" alt="Logo FIBA">
+        <img src="../assets/assets-basquet/kelme.png" alt="Logo Kelme">
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="img-footer"></div>
+    <footer>
+      <a href="#home" class="logo-verde">
+        <img
+          src="../assets/assetsprincipal/tuc-azul-removebg-preview.png"
+          alt="logo-tucuman-verde"
+        />
+      </a>
+      <div class="red-social borde">
+        <div class="red-social-item">
+            <span class="nombre">Ramiro Sorroza</span>
+        <a href="#" target="_blank" class="fa fa-github"></a>
+        <a href="#" target="_blank" class="fa fa-whatsapp"></a>
+        <a href="#" target="_blank" class="fa fa-envelope"></a>
+        </div>
+        <div class="red-social-item">
+            <span class="nombre">Franco Zim</span>
+            <a href="#" target="_blank" class="fa fa-github"></a>
+            <a href="#" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="#" target="_blank" class="fa fa-envelope"></a>
+        </div>
+        <div class="red-social-item">
+            <span class="nombre">Camila Prado</span>
+            <a href="#" target="_blank" class="fa fa-github"></a>
+            <a href="#" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="#" target="_blank" class="fa fa-envelope"></a>
+        </div>
+        <div class="red-social-item">
+            <span class="nombre">Jorge Palomar</span>
+            <a href="#" target="_blank" class="fa fa-github"></a>
+            <a href="#" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="#" target="_blank" class="fa fa-envelope"></a>
+        </div>
+        <div class="red-social-item">
+            <span class="nombre">Valentino Lencina</span>
+            <a href="#" target="_blank" class="fa fa-github"></a>
+            <a href="#" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="#" target="_blank" class="fa fa-envelope"></a>        </div>
+        <div class="red-social-item">
+            <span class="nombre">Lara Aguirre</span>
+            <a href="#" target="_blank" class="fa fa-github"></a>
+            <a href="#" target="_blank" class="fa fa-whatsapp"></a>
+            <a href="#" target="_blank" class="fa fa-envelope"></a>
+        </div>
+      </div>
+      
+
+      <div class="grupo">
+        <small
+          >&copy; 2024 <b>Grupo Deportes</b> - Todos los Derechos
+          Reservados.</small
+        >
+      </div>
+    </footer>
+
      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
