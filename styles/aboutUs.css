@@ -60,10 +60,10 @@ body{
   background: linear-gradient(#EAE0D5, #22333B, #22333B);
   color: white;
 }
-
-.team-member {
-  margin-bottom: 20px;
-}
+  .team-member {
+    margin-bottom: 20px;
+    
+  }
 
 .team-member img {
   width: 100%;
