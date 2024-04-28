@@ -4,6 +4,13 @@
     box-sizing: content-box;
 }
 
+body{
+  background: linear-gradient(#faeee3, #22333B, #22333b, #22333b);
+  font-family: "Jacquard 12 Charted", system-ui ;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* NAV */
 .navegador{
   display: flex;
@@ -114,6 +121,7 @@ nav{
 }
 .card-body{
   height: 150px;
+  background-color: #EAE0D5;
 }
 /*SOCIAL*/
 .social{
@@ -163,11 +171,11 @@ nav{
 }
 .carousel-sponsors:before { 
   left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), white);
+  background: linear-gradient(to left, rgba(255,255,255,0), #22333b);
 }
 .carousel-sponsors:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), white);
+  background: linear-gradient(to right, rgba(255,255,255,0), #22333b);
 }
 .carousel-sponsors{
   animation-play-state: paused;
