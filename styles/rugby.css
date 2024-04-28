@@ -10,11 +10,43 @@
     color: black;
 }
 
+/* banner */
+  
+.bannerrugby {
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/rugbyimages/bannerurt.png); 
+    background-size: cover;
+    background-position: center ;
+    padding: 300px;
+    width: 100%;
+}
+
+.bannerrugby img{
+    width: 1164px;
+}
+
+body{
+    background: linear-gradient(#faeee3, #22333B, #233040, #233040);
+    font-family: "Jacquard 12 Charted", system-ui;
+}
+
+ 
 .carouselequiposrugby{
     display: flex;
     justify-content: center;
     
 }
+
+.carouselequiposrugby h5 {
+    color: white;
+}
+
+.carouselequiposrugby a {
+    text-decoration: none;
+}
+
+
 .carousel-item img {
     object-fit: contain;
     width: 1300px;
@@ -35,11 +67,11 @@
 }
 
 .carousel-control-prev {
-    margin-top: 200px;
+    margin-top: 1070px;
 }
 
 .carousel-control-next {
-    margin-top: 200px;
+    margin-top: 1070px;
 }
 
 .carousel-control-prev-icon {
@@ -62,6 +94,8 @@
     margin-top: 150px;
     margin-left: 150px;
 }
+
+/*Cards Informacion*/
 
 .card1 {
     width: 500px;
@@ -135,3 +169,143 @@
     font-size: 22px;
     overflow: auto;
 }
+
+/*Video y Mapa*/
+
+.youtubevideo {
+    margin-top: 125px;
+    margin-left: 190px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+.mapaurt {
+    margin-top: 125px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+/*Carousel Sponsors*/
+
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carousel-sponsors{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.carousel-sponsors:before { 
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #233040);
+}
+.carousel-sponsors:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #233040);
+}
+.carousel-sponsors{
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+.logos-slide img{
+  border-radius: 5px;
+  height: 50px;
+  margin: 0 40px;
+}
+
+/*Footer y diseño*/
+
+/*Estilos generales*/
+
+.img-footer {
+    background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+    background-size: cover;
+    background-position: center ;
+    padding: 200px;
+  
+}
+
+footer{
+    background-color: #22333b;
+    padding: 40px 0 20px; 
+}
+
+/*Estilos de Logo*/
+
+.logo-verde img{
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 50%; 
+    height: 140px;
+    width: 140px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.red-social{
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.red-social-item {
+    text-align: center;
+    margin: 0 15px; 
+   
+}
+
+.red-social a{
+    color: antiquewhite;
+    text-decoration: none;
+    margin: 0 15px; 
+    font-size: 20px; 
+}
+
+.nombre {
+    color: white;
+    font-size: 14px; 
+    display: block;
+    margin-bottom: 5px; 
+    font-size: 17px;
+}
+
+.grupo{
+    text-align: center;
+    color: white;
+    margin-top: 20px; 
+    font-size: 18px; 
+}
+
+@media (max-width: 768px) {
+    .red-social {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .red-social a {
+        margin: 5px 0; 
+    }
+}
+
+
