@@ -8,8 +8,8 @@
 .navegador{
   display: flex;
   flex-direction: column;
+  background-color: #22333B;
 }
-
 nav{
  background-color: #22333B;
 }
@@ -61,17 +61,41 @@ nav{
   justify-content:center;
   align-items:center;
 }
-
-.banner-basquet{
-  width: 100%;
+/*BANNER BASQUET*/
+.banner-basquet {
   display: flex;
   justify-content: center;
+  background-image: url('../assets/assets-basquet/banner-basquet.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 570px;
+  width: 100%;
+}
 
-}
 .banner-basquet img{
-  height: 100%;
-  width: 1200px;
+  width: 100%;
 }
+/*CAROUSEL*/
+.carousel-news{
+  height: 600px;
+  margin: 25px 0 25px 0;
+}
+.carousel-news img{
+  height: 600px;
+  object-fit: cover;
+}
+.carousel-news a{
+  color: white;
+}
+/*SOCIAL*/
+.social{
+  display: flex;
+  justify-content: center;
+}
+.map{
+  height: 400px;
+}
+/*CARDS SECCION*/
 .card-section{
   margin-top: 50px;
   margin-bottom: 150px;
@@ -91,50 +115,27 @@ nav{
 .card-body{
   height: 150px;
 }
-/*CAROUSEL*/
-.carouselequiposrugby{
-  display: flex;
-  justify-content: center;
-}
-.carousel-item img {
-  object-fit: contain;
-  width: 1300px;
-  height: 400px;
-}
-.carousel-item h5 {
-  text-align: center;
-  margin-top: 50px;
-  font-weight: bold;
-}
-.titulosectionrugby {
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-.carouselequiposrugby button{
-  margin-top: 950px;  
-}
-.carousel-control-prev-icon {
-  background-color: black;
-  border-radius: 10px 10px;
-}
-.carousel-control-next-icon {
-  background-color: black;
-  border-radius: 10px 10px;
-}
-
-.social{
-  display: flex;
-  justify-content: center;
-}
-.map{
-  height: 400px;
-}
 /*SOCIAL*/
 .social{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.social iframe{
+  border-radius: 25px;
+  height: 400px;
+}
+.comunication-container{
+  display: flex;
+  background-color: rgba(230, 230, 230, 0.582);
+  border-radius: 25px;
+}
+.comunication a{
+  color: black;
+}
+.comunication li{
+  list-style: none;
+  text-decoration: none;
 }
 /*CARRUSEL DE SPONSORS*/
 @keyframes slide{
