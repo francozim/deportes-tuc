@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: content-box;
 }
-
+body{
+  background: linear-gradient(180deg, rgba(34,51,59,1) 0%, rgba(255,255,255,1) 70%);
+}
 /* NAV */
 .navegador{
   display: flex;
@@ -87,13 +89,9 @@ nav{
 .carousel-news a{
   color: white;
 }
-/*SOCIAL*/
-.social{
-  display: flex;
-  justify-content: center;
-}
-.map{
-  height: 400px;
+.carousel-caption{
+  background-color: black;
+  opacity: 0.8;
 }
 /*CARDS SECCION*/
 .card-section{
@@ -111,11 +109,19 @@ nav{
 }
 .card-news img{
   height: 350px;
+  margin: 10px solid black;
+}
+.card-news:hover{
+  transform: scale(1.05);
 }
 .card-body{
   height: 150px;
 }
+
 /*SOCIAL*/
+.map{
+  height: 400px;
+}
 .social{
   display: flex;
   flex-wrap: wrap;
@@ -125,8 +131,13 @@ nav{
   border-radius: 25px;
   height: 400px;
 }
+.comunication{
+  margin-left: -20px;
+  padding-right: 10px;
+}
 .comunication-container{
   display: flex;
+  align-items: center;
   background-color: rgba(230, 230, 230, 0.582);
   border-radius: 25px;
 }
