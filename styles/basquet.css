@@ -116,6 +116,7 @@ nav{
 }
 .card-body{
   height: 150px;
+  background-color: #EAE0D5;
 }
 
 /*SOCIAL*/
@@ -174,11 +175,11 @@ nav{
 }
 .carousel-sponsors:before { 
   left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), white);
+  background: linear-gradient(to left, rgba(255,255,255,0), #22333b);
 }
 .carousel-sponsors:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), white);
+  background: linear-gradient(to right, rgba(255,255,255,0), #22333b);
 }
 .carousel-sponsors{
   animation-play-state: paused;
