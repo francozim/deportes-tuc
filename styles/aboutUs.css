@@ -61,36 +61,36 @@ body{
   color: white;
 }
 
-  .team-member {
-    margin-bottom: 20px;
-  }
+.team-member {
+  margin-bottom: 20px;
+}
 
-  .team-member img {
-    width: 100%;
-    height: auto;
-  }
+.team-member img {
+  width: 100%;
+  height: auto;
+}
 
-  .card-body a{
-      text-decoration: none;
-      color: black;
-      padding-right: 10px;
-      font-size: 32px;
-      justify-content: center;
-  }
+.card-body a{
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+  font-size: 32px;
+  justify-content: center;
+}
 
-  .card-title{
-    font-size: 25px;
-  }
+.card-title{
+  font-size: 25px;
+}
 
-  .card-body a:hover{
-    color: #22333B;
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
+.card-body a:hover{
+  color: #22333B;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 
-  .presentation-text p{
-    font-size: 20px;
-  }
+.presentation-text p{
+  font-size: 20px;
+}
 
 
  /* Estilos generales del footer */
