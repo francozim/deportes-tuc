@@ -1,7 +1,7 @@
 body {
-  background: linear-gradient(#5E503F, #C6AC8F, #C6AC8F);
-  font-family: "Open Sans", sans-serif !important;
-} 
+  background: linear-gradient(#C6AC8F, #5E503F, #5E503F);
+  color: white;
+}
 
 /* NAV */
 .navegador {
