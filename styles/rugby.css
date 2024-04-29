@@ -104,8 +104,8 @@ nav {
 
 .card-news{
     height: 500px;
-    width: 400px;
-    margin: 25px; 
+    width: 350px;
+    margin-bottom: 25px; 
     margin-top: 0px;
 }
 
@@ -124,21 +124,17 @@ nav {
 }
   
 /*Video y Mapa*/
-
-.youtubevideo {
-    margin-top: 125px;
-    margin-left: 190px;
-    margin-bottom: 100px;
-    border-radius: 20px;
-}
-
-.mapaurt {
-    margin-top: 125px;
-    margin-left: 350px;
-    margin-bottom: 100px;
-    border-radius: 20px;
-}
-
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .social iframe{
+    border-radius: 25px;
+    height: 400px;
+    margin-bottom: 25px;
+    padding: 15px;
+  }
 /*Carousel Sponsors*/
 
 @keyframes slide{
