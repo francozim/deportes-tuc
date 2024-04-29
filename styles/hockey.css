@@ -1,137 +1,258 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
-body{
-    background-color: #0AA092;
+body {
+  background: linear-gradient(#eae0d5, #22333b, #22333b);
+  color: white;
 }
 
-.titulo {
-    transition: all 0.3s;
-  }
-  
-  .titulo:hover {
-    color:#FA770F; 
-  }
-
-h1{
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-    margin: 20px;
-    padding:20px;
+/* NAV */
+.navegador{
+display: flex;
+flex-direction: column;
+background-color: #22333B;
 }
-
-  
-.main-container{
-    display: flex;
-    align-items: center;
+nav{
+background-color: #22333B;
 }
-
-.carousel{
-    width: 30px; 
-    overflow: hidden;
+.navbar-brand img{
+border-radius: 30px;
 }
-
-.club{
-    width: 80px;
-    height: 80px;
+.navegador a {
+font-size: 30px;
+margin-right: 60px;
+text-decoration: none;
+color: rgb(255, 255, 255);
+margin-top: -3px;
 }
-
-h2{
-    text-align: center;
-    font-size: 25px;
-    margin: 25px;
-    padding: 25px;
+.menu_list{
+margin-top:0%;
+text-align: center;
+margin-left: 1300px;
+margin-top: -70px;
 
 }
-
-ul{
-    display: flex;
-    list-style: none;
-    animation: slide 20s infinite linear;
+.list_item{
+display: inline-block;
+list-style: none;
+}
+.link{
+text-decoration: none;
+color: inherit;
+padding: 10px;
+font-size: 1.1rem;
+position: relative;
+}
+.link::after{
+content: "";
+width: 0;
+height: 4px;
+background-color: rgb(255, 255, 255);
+position: absolute;
+bottom: 0;
+right: 50%;
+transition: all .5s;
+will-change:  width;
+}
+.link:hover:after{
+width: 100%;
+right: 0;
+}
+.data-container{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+/*BANNER HOCKEY*/
+.banner-hockey {
+display: flex;
+justify-content: center;
+background-image: url('../assets/assets-hockey/atah3.png'); 
+background-size:contain;
+background-position: center;
+padding-bottom: 600px;
+width: 100%;
 }
 
-.container{
-    height: 50vh;
-    width: 20px;
-    display: grid;
-    place-content: center;
+.banner-hockey img{
+width: 100%;
+}
+/*CAROUSEL*/
+.carousel-news{
+height: 600px;
+margin: 25px 0 25px 0;
+}
+.carousel-news img{
+height: 600px;
+object-fit: cover;
+}
+.carousel-news a{
+color: white;
+}
+/*SOCIAL*/
+.social{
+display: flex;
+justify-content: center;
+}
+.map{
+height: 400px;
+}
+/*CARDS SECCION*/
+.card-section{
+margin-top: 50px;
+margin-bottom: 150px;
+display: flex;
+justify-content: center;
+width: 100%;
+}
+.card-news{
+height: 400px;
+width: 300px;
+margin: 25px; 
+margin-bottom: 150px;
+}
+.card-news img{
+height: 350px;
+}
+.card-body{
+height: 150px;
+}
+/*SOCIAL*/
+.social{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.social iframe{
+border-radius: 25px;
+height: 400px;
+}
+.comunication-container{
+display: flex;
+background-color: rgba(230, 230, 230, 0.582);
+border-radius: 25px;
+}
+.comunication a{
+color: black;
+}
+.comunication li{
+list-style: none;
+text-decoration: none;
+}
+/*CARRUSEL DE SPONSORS*/
+@keyframes slide{
+from{
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-100%);
+}
+}
+.carousel-sponsors{
+overflow: hidden;
+padding: 60px 0;
+white-space: nowrap;
+position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+position: absolute;
+top: 0;
+width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+.carousel-sponsors:before { 
+left: 0;
+background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+.carousel-sponsors:after{
+right: 0;
+background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+.carousel-sponsors{
+animation-play-state: paused;
+}
+.logos-slide {
+display: inline-block;
+animation: 30s slide infinite linear;
+}
+.logos-slide img{
+height: 50px;
+margin: 0 40px;
+}
+/* FOOTER */
+.img-footer {
+background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+background-size: cover;
+background-position: center ;
+padding: 200px;
+
 }
 
-
-h3{
-    text-align: center;
-    font-size: 20px;
+footer{
+background-color: #22333b;
+padding: 40px 0 20px; 
 }
 
-
-.image{
-    height: 350px;
-    width: 350px;
-    justify-content: center;
+/* Estilos para el logo */
+.logo-verde img{
+display: block; 
+margin: 0 auto; 
+border-radius: 50%; 
+height: 140px;
+width: 140px;
+margin-top: 10px;
+margin-bottom: 60px;
 }
 
-.card {
-        background-color:#A8BFBD;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
+.red-social{
+display: flex;
+justify-content: center; 
+margin-top: 20px;
+margin-bottom: 60px;
+}
 
+.red-social-item {
+text-align: center;
+margin: 0 15px; 
 
-      @keyframes slide {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
-        150% { transform: translateX(-200%); }
-        180% { transform: translateX(-300%); }
-        200% { transform: translateX(-400%); }
+}
 
-      }
+.red-social a{
+color: antiquewhite;
+text-decoration: none;
+margin: 0 15px; 
+font-size: 20px; 
+}
 
-      .information{
-        display: flex;
-        padding: 150px;
-        justify-content: space-around;
-      }
+.nombre {
+color: white;
+font-size: 14px; 
+display: block;
+margin-bottom: 5px; 
+font-size: 17px;
+}
 
-      .card {
-        max-width: 300px;
-        background-color: #AB9C91;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      
-      .card img {
-        width: 100%;
-        height: auto; 
-      }
-      
-      .card-content {
-        padding: 20px; 
-      }
-      
-      .card-content h2 {
-        margin-top: 0; 
-      }
-      
-      .card-content p {
-        margin-bottom: 15px; 
-      }
-      
-      .card-content a {
-        display: inline-block;
-        background-color:#5E5C5B; 
-        color:black; 
-        padding: 8px 16px;
-        text-decoration: none;
-        border-radius: 4px; 
-      }
-      
-      .card-content a:hover {
-        background-color:#FA770F; 
-      }
+.grupo{
+text-align: center;
+color: white;
+margin-top: 20px; 
+font-size: 18px; 
+}
+
+@media (max-width: 768px) {
+.red-social {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.red-social a {
+    margin: 5px 0; 
+}
+}
