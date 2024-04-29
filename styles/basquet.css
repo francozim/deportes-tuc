@@ -4,18 +4,18 @@
     box-sizing: content-box;
 }
 body{
-  background: linear-gradient(180deg, rgba(34,51,59,1) 0%, rgba(255,255,255,1) 70%);
    font-family: "Open Sans", sans-serif !important;
+  background: linear-gradient(rgb(25,145,201),rgb(255, 255, 255), rgb(255, 255, 255));
 }
 /* NAV */
 .navegador {
   display: flex;
   flex-direction: column;
-  background-color: #5E503F;
+  background-color: #1891c9;
 }
 
 nav {
-  background-color: #5E503F;
+  background-color: #1891c9;
 }
 
 .navegador a {
@@ -180,9 +180,8 @@ nav {
   background-position: center;
   padding: 200px;
 }
-
 footer {
-  background-color: #22333b;
+  background: linear-gradient(rgb(255, 255, 255), rgb(25,145,201),rgb(25,145,201));
   padding: 40px 0 20px;
 }
 /* Estilos para el logo */
