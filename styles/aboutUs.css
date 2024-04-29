@@ -1,30 +1,46 @@
-body{
-  background: linear-gradient(#EAE0D5, #22333B, #22333B);
-  color: white;
-}
+body {
+  background: linear-gradient( #C6AC8F, #5E503F, #C6AC8F, #C6AC8F);
+  font-family: "Open Sans", sans-serif !important;
+} 
 
 /* NAV */
-.navbar{
- background-color: #22333B;
+.navegador {
+  display: flex;
+  flex-direction: column;
+  background-color: #5E503F;
 }
-.navbar-brand img{
-  border-radius: 30px;
+
+nav {
+  background-color: #5E503F;
 }
-.navbar a {
-  font-size: 30px;
+
+.navegador a {
+  font-size: 25px;
   margin-right: 60px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   margin-top: -3px;
 }
-.menu_list{
-  margin-top:0%;
+.menu_list {
+  margin-top: 0%;
   text-align: center;
   margin-left: 1300px;
   margin-top: -70px;
-
 }
 
+.navbar-toggler {
+  border-color: white; 
+}
+
+.fas {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #5E503F;
+  list-style: none;
+  border-color: #5E503F !important;
+}
 
 .card-section{
   margin-top: 50px;
@@ -44,31 +60,28 @@ body{
   height: 350px;
 }
 .card-body{
-  height: 165px;
-  
+  height: 180px;
 }
 
 .presentation-text p{
-  color: black;
+  color: #0e0a06;
   opacity: 0.9;
 }
 
 
 .titulo h1{
-  color: black;
+  color: #0e0a06;
   opacity: 0.9;
 }
 .card-body a{
   text-decoration: none;
-  color: black;
+  color: #0e0a06;
   padding-right: 5px;
   font-size: 25px;
   margin-top: -30px;
   justify-content: center;
 }
   /* footer */
-  
-    /* Estilos generales del footer */
     .img-footer {
       background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
       background-size: cover;
@@ -99,7 +112,9 @@ body{
     color: white;
     margin-top: 20px; 
     font-size: 18px; 
-=======
+     }
+
+     
   .team-member {
     margin-bottom: 20px;
     
@@ -132,31 +147,80 @@ body{
   font-size: 20px;
 }
 
-
- /* Estilos generales del footer */
-
+/* footer */
 .img-footer {
-  background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+  background-image: url("../assets/assetsprincipal/34b18912-b8ac-49a1-ad29-c3a276b240b7-removebg-preview.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  padding: 0; /* Eliminar el padding o reducir su valor */
+  padding: 200px;
 }
 
 footer {
-  background-color: #22333b;
-  padding: 40px 0 20px; 
-  width: 100%; /* Asegurar que el footer ocupe todo el ancho */
-  margin: 0; /* Asegurar que no haya margen */
+  background-color: #C6AC8F;
+  padding: 40px 0 20px;
 }
 
 /* Estilos para el logo */
 .logo-verde img {
-  display: block; 
-  margin: 0 auto; 
-  border-radius: 50%; 
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
   height: 140px;
   width: 140px;
   margin-top: 10px;
   margin-bottom: 60px;
+}
+
+.red-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.red-social-item {
+  text-align: center;
+  margin: 0 15px;
+}
+
+.red-social a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.nombre {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.grupo {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/*media query footer*/
+
+@media (max-width: 768px) {
+  .red-social {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .red-social a {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 360px) {
+    .img-footer {
+     padding: 100px;
+    }
 }
