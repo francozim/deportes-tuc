@@ -3,18 +3,17 @@
     padding: 0;
     box-sizing: content-box;
 }
-
+body{
+  background: linear-gradient(180deg, rgba(34,51,59,1) 0%, rgba(255,255,255,1) 70%);
+}
 /* NAV */
-.navegador{
+.navegador {
   display: flex;
   flex-direction: column;
+  background-color: #22333b;
 }
-
-nav{
- background-color: #22333B;
-}
-.navbar-brand img{
-  border-radius: 30px;
+nav {
+  background-color: #22333b;
 }
 .navegador a {
   font-size: 30px;
@@ -23,55 +22,58 @@ nav{
   color: rgb(255, 255, 255);
   margin-top: -3px;
 }
-.menu_list{
-  margin-top:0%;
+.menu_list {
+  margin-top: 0%;
   text-align: center;
   margin-left: 1300px;
   margin-top: -70px;
-
 }
-.list_item{
-  display: inline-block;
+.navbar-toggler {
+  border-color: white; /* Color del borde del botón */
+}
+.fas {
+  color: white;
+}
+.dropdown-menu {
+  background-color: #22333b;
   list-style: none;
+  border-color: #22333b !important;
 }
-.link{
-  text-decoration: none;
-  color: inherit;
-  padding: 10px;
-  font-size: 1.1rem;
-  position: relative;
+.dropdown-item {
+  text-align: center;
+  margin: 10px;
 }
-.link::after{
-  content: "";
-  width: 0;
-  height: 4px;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transition: all .5s;
-  will-change:  width;
-}
-.link:hover:after{
-  width: 100%;
-  right: 0;
-}
-.data-container{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.banner-basquet{
-  width: 100%;
+/*BANNER BASQUET*/
+.banner-basquet {
   display: flex;
   justify-content: center;
+  background-image: url('../assets/assets-basquet/banner-basquet.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 570px;
+  width: 100%;
+}
 
-}
 .banner-basquet img{
-  height: 100%;
-  width: 1200px;
+  width: 100%;
 }
+/*CAROUSEL*/
+.carousel-news{
+  height: 600px;
+  margin: 25px 0 25px 0;
+}
+.carousel-news img{
+  height: 600px;
+  object-fit: cover;
+}
+.carousel-news a{
+  color: white;
+}
+.carousel-caption{
+  background-color: black;
+  opacity: 0.8;
+}
+/*CARDS SECCION*/
 .card-section{
   margin-top: 50px;
   margin-bottom: 150px;
@@ -87,54 +89,44 @@ nav{
 }
 .card-news img{
   height: 350px;
+  margin: 10px solid black;
+}
+.card-news:hover{
+  transform: scale(1.05);
 }
 .card-body{
   height: 150px;
 }
-/*CAROUSEL*/
-.carouselequiposrugby{
-  display: flex;
-  justify-content: center;
-}
-.carousel-item img {
-  object-fit: contain;
-  width: 1300px;
-  height: 400px;
-}
-.carousel-item h5 {
-  text-align: center;
-  margin-top: 50px;
-  font-weight: bold;
-}
-.titulosectionrugby {
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-.carouselequiposrugby button{
-  margin-top: 950px;  
-}
-.carousel-control-prev-icon {
-  background-color: black;
-  border-radius: 10px 10px;
-}
-.carousel-control-next-icon {
-  background-color: black;
-  border-radius: 10px 10px;
-}
 
-.social{
-  display: flex;
-  justify-content: center;
-}
+/*SOCIAL*/
 .map{
   height: 400px;
 }
-/*SOCIAL*/
 .social{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.social iframe{
+  border-radius: 25px;
+  height: 400px;
+}
+.comunication{
+  margin-left: -20px;
+  padding-right: 10px;
+}
+.comunication-container{
+  display: flex;
+  align-items: center;
+  background-color: rgba(230, 230, 230, 0.582);
+  border-radius: 25px;
+}
+.comunication a{
+  color: black;
+}
+.comunication li{
+  list-style: none;
+  text-decoration: none;
 }
 /*CARRUSEL DE SPONSORS*/
 @keyframes slide{
@@ -162,11 +154,11 @@ nav{
 }
 .carousel-sponsors:before { 
   left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), white);
+  background: linear-gradient(to left, rgba(255,255,255,0), #ffffff);
 }
 .carousel-sponsors:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), white);
+  background: linear-gradient(to right, rgba(255,255,255,0), #ffffff);
 }
 .carousel-sponsors{
   animation-play-state: paused;
@@ -180,73 +172,89 @@ nav{
   margin: 0 40px;
 }
  /* FOOTER */
- .img-footer {
-  background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+.img-footer {
+  background-image: url("../assets/assetsprincipal/34b18912-b8ac-49a1-ad29-c3a276b240b7-removebg-preview.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   padding: 200px;
-
 }
 
-footer{
+footer {
   background-color: #22333b;
-  padding: 40px 0 20px; 
+  padding: 40px 0 20px;
 }
-
 /* Estilos para el logo */
-.logo-verde img{
-  display: block; 
-  margin: 0 auto; 
-  border-radius: 50%; 
+.logo-verde img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
   height: 140px;
   width: 140px;
   margin-top: 10px;
   margin-bottom: 60px;
 }
-
-.red-social{
+.red-social {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 60px;
 }
-
 .red-social-item {
   text-align: center;
-  margin: 0 15px; 
- 
+  margin: 0 15px;
 }
-
-.red-social a{
-  color: antiquewhite;
+.red-social a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  margin: 0 15px; 
-  font-size: 20px; 
+  margin: 0 15px;
+  font-size: 20px;
 }
-
 .nombre {
   color: white;
-  font-size: 14px; 
+  font-size: 14px;
   display: block;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
   font-size: 17px;
 }
-
-.grupo{
+.grupo {
   text-align: center;
   color: white;
-  margin-top: 20px; 
-  font-size: 18px; 
+  margin-top: 20px;
+  font-size: 18px;
 }
-
 @media (max-width: 768px) {
   .red-social {
-      flex-direction: column; 
-      align-items: center; 
-      margin-top: 10px; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .red-social a {
+    margin: 5px 0;
+  }
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 768px) {
+  .row{
+    width: 100%;
+  }
+  .banner-basquet{
+    background-image: url(../assets/assets-basquet/federación-logo.jpg);
+    background-size: cover;
+    width: 360px;
+  }
+  .comunication-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .social{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  .video{
+    margin-bottom: 25px;
   }
 
-  .red-social a {
-      margin: 5px 0; 
-  }
 }
