@@ -1,13 +1,54 @@
-.navegador{
-    display: flex;
-    flex-direction: column;
+/* Body */
+
+body{
+    background: linear-gradient(#ff7300, #995822, #172366, #0e0f49);
+    font-family: "Jacquard 12 Charted", system-ui;
 }
 
+/* Navegador */
+
+.navegador {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff7300;
+}
+  
+nav {
+    background-color: #ff7300;
+}
+  
 .navegador a {
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 60px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-top: -3px;
+}
+
+.menu_list {
+    margin-top: 0%;
+    text-align: center;
+    margin-left: 1300px;
+    margin-top: -70px;
+}
+  
+.navbar-toggler {
+    border-color: white; 
+}
+  
+.fas {
+    color: white;
+}
+  
+.dropdown-menu {
+    background-color: #ff7300;
+    list-style: none;
+    border-color: #ff7300 !important;
+}
+
+.dropdown-item {
+    text-align: center;
+    margin: 10px;
 }
 
 /* banner */
@@ -15,161 +56,73 @@
 .bannerrugby {
     display: flex;
     justify-content: center;
-    background-image: url(../assets/rugbyimages/bannerurt.png); 
+    background-image: url(../assets/rugbyimages/urt3.jpg); 
     background-size: cover;
     background-position: center ;
     padding: 300px;
     width: 100%;
 }
 
-.bannerrugby img{
-    width: 1164px;
+/* Carousel */
+
+.carousel-news{
+    height: 600px;
+    margin: 25px 0 25px 0;
 }
 
-body{
-    background: linear-gradient(#faeee3, #22333B, #233040, #233040);
-    font-family: "Jacquard 12 Charted", system-ui;
+.carousel-news img{
+    height: 600px;
+    object-fit: cover;
 }
 
- 
-.carouselequiposrugby{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.carouselequiposrugby h5 {
+.carousel-news a{
     color: white;
 }
 
-.carouselequiposrugby a {
-    text-decoration: none;
-}
-
-
-.carousel-item img {
-    object-fit: contain;
-    width: 1300px;
-    height: 400px;
-}
-
-.carousel-item h5 {
-    text-align: center;
-    margin-top: 50px;
-    font-weight: bold;
-}
-
-.titulosectionrugby {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
-
-}
-
-.carousel-control-prev {
-    margin-top: 1070px;
-}
-
-.carousel-control-next {
-    margin-top: 1070px;
-}
-
-.carousel-control-prev-icon {
+.carousel-caption{
     background-color: black;
-    border-radius: 10px 10px;
+    opacity: 0.8;
 }
 
-.carousel-control-next-icon {
-    background-color: black;
-    border-radius: 10px 10px;
-}
-
-
-.infojugador-noticiarugby {
-    display: flex;  
-}
-
-.imagenjugador img {
-    width: 500px;
-    margin-top: 150px;
-    margin-left: 150px;
-}
 
 /*Cards Informacion*/
 
-.card1 {
-    width: 500px;
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    color: white;
+}
+
+.card-section{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-news{
     height: 500px;
-    margin-left: 200px;
-    margin-top: 250px;
-    background-color: #CAD2C5;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
+    width: 400px;
+    margin: 25px; 
+    margin-top: 0px;
 }
 
-.card1:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
+.card-news img{
+    height: 350px;
+    margin: 10px solid black;
 }
 
-.card1 h5 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 20px;
+.card-news:hover{
+    transform: scale(1.05);
 }
 
-.card1 h6 {
-    text-align: center;
-    margin-top: 20px;
-    font-size:26px ;
+.card-body{
+    height: 150px;
+    background-color: #EAE0D5;
 }
-
-.card1 p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 26px;
-    overflow: auto;
-}
-
-
-.card2 {
-    width: 500px;
-    height: 500px;
-    margin-left: 110px;
-    margin-top: 250px;
-    background-color: #CAD2C5;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-}
-
-.card2:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);
-}
-.card2 h5 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-.card2 h6 {
-    text-align: center;
-    margin-top: 20px;
-    font-size:26px ;
-}
-
-.card2 p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 22px;
-    overflow: auto;
-}
-
+  
 /*Video y Mapa*/
 
 .youtubevideo {
@@ -206,18 +159,18 @@ body{
 .carousel-sponsors:after{
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 350px;
   height: 100%;
   content: "";
   z-index: 2;
 }
 .carousel-sponsors:before { 
   left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), #233040);
+  background: linear-gradient(to left, rgba(255,255,255,0), #08103b);
 }
 .carousel-sponsors:after{
   right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), #233040);
+  background: linear-gradient(to right, rgba(255,255,255,0), #08103b);
 }
 .carousel-sponsors{
   animation-play-state: paused;
@@ -228,7 +181,7 @@ body{
 }
 .logos-slide img{
   border-radius: 5px;
-  height: 50px;
+  height: 80px;
   margin: 0 40px;
 }
 
@@ -245,7 +198,7 @@ body{
 }
 
 footer{
-    background-color: #22333b;
+    background-color: #0e0f49;
     padding: 40px 0 20px; 
 }
 

@@ -17,26 +17,42 @@
     <title>Rugby</title>
   </head>
   <body>
-    
     <!-- Navegador -->
 
     <header class="navegador">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="../assets/assetsprincipal/logotucuman.png"
-              alt="logotucuman"
-              width="85"
-              height="75"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="">About Us</a>
-          <a href="">Free Pages</a>
-        </div>
-      </nav>
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="../index.html">
+                  <img src="../assets/assetsprincipal/tuc-azul-removebg-preview.png" alt="logotucuman" width="95" height="85">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span >
+                    <i class="fas fa-bars" ></i>
+                </span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="../aboutUs.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Free Page</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Deportes
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./basquet.html">Basquet</a></li>
+                          <li><a class="dropdown-item" href="./voley.html">Voley</a></li>
+                          <li><a class="dropdown-item" href="./hockey.html">Hockey</a></li>
+                          <li><a class="dropdown-item" href="./rugby.html">Rugby</a></li>
+                          <li><a class="dropdown-item" href="./futbol.html">Fútbol</a></li>
+                      </ul>
+                      
+              </div>
+          </nav>
+      </div>
     </header>
 
     <!-- Banner -->
@@ -45,271 +61,215 @@
 
     <!-- Section 1 -->
 
-    <section class="equipos destacados">
-      <div class="titulosectionrugby">
-        <h1>Equipos Destacados</h1>
-      </div>
-    </section>
-    <section class="carouselequiposrugby">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <section class="carousel-news">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="https://www.instagram.com/urtrugby/" target="_blank">
-              <img
-                src="../assets/rugbyimages/urtimage.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Unión de Rugby de Tucumán</h5>
-            </a>
+            <img
+              src="../assets/rugbyimages/lawnequipo.jpg"
+              class="d-block w-100"
+              alt="Jornada 2 Super Liga de Basquet Tucumano"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>LAWN TENNIS CUMPLE 109 AÑOS</h5>
+              <p>
+                Los Benjamines del Parque incorporaron el rugby en 1961. El club
+                fue fundado el 14 de abril de 1915.
+              </p>
+            </div>
           </div>
           <div class="carousel-item">
-            <a href="https://www.instagram.com/tuclawntennis/" target="_blank">
-              <img
-                src="../assets/rugbyimages/lawntennis.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Tucumán Lawn Tennis</h5>
-            </a>
+            <img
+              src="../assets/rugbyimages/urtaniv.jpg"
+              class="d-block w-100"
+              alt="Clínica de arbitros en Tucumán"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>LA URT LLEGÓ A LOS 80 AÑOS</h5>
+              <p>
+                Nació como Unión de Rugby del Norte, desde 1966 Unión de Rugby
+                de Tucumán, y en sus 80 años de historia ya cuenta con 26 clubes
+                y sus Seleccionados fueron campeones del Argentino en todas sus
+                categorías.
+              </p>
+            </div>
           </div>
           <div class="carousel-item">
-            <a
-              href="https://www.instagram.com/lostarcosrugbyclub/"
-              target="_blank"
-            >
-              <img
-                src="../assets/rugbyimages/tarcos.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Los Tarcos Rugby Club</h5>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a
-              href="https://www.instagram.com/tucumanrugbyoficial/"
-              target="_blank"
-            >
-              <img
-                src="../assets/rugbyimages/TucumanRugbyClub.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Tucumán Rugby Club</h5>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a
-              href="https://www.instagram.com/natacionygimnasiaok/"
-              target="_blank"
-            >
-              <img
-                src="../assets/rugbyimages/natacion.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Natación y Gimnasia</h5>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="https://www.instagram.com/club.huirapuca/" target="_blank">
-              <img
-                src="../assets/rugbyimages/Huirapuca.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Huirapuca (Concepción)</h5>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a
-              href="https://www.instagram.com/cardenalesrugbyclubof/"
-              target="_blank"
-            >
-              <img
-                src="../assets/rugbyimages/Cardenales.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Cardenales Rugby Club</h5>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a
-              href="https://www.instagram.com/universitariorugbytuc/"
-              target="_blank"
-            >
-              <img
-                src="../assets/rugbyimages/universitario.png"
-                class="d-block w-100"
-                alt="..."
-              />
-              <h5>Universitario Rugby Club</h5>
-            </a>
+            <img
+              src="../assets/rugbyimages/gimnasia.jpg"
+              class="d-block w-100"
+              alt="Inscripción Prensa Americup U18 masculina"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>EL “DECANO” DEL RUGBY CUMPLIÓ 94 AÑOS</h5>
+              <p>
+                Natación y Gimnasia festeja un año más de vida institucional. Un
+                repaso por su historia y sus protagonistas
+              </p>
+            </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </section>
 
     <!-- Section 2 -->
-
-    <section class="infojugador-noticiarugby">
-      <div class="imagenjugador">
-        <a href="https://www.instagram.com/carrerasmateo/" target="_blank">
-          <img src="../assets/rugbyimages/Matheo Carreras.png" />
-        </a>
-      </div>
-      <div class="card1">
-        <div class="cardrugby1">
-          <h5 class="card-title">Mateo Carreras</h5>
-          <h6 class="card-subtitle">New Castle Falcons</h6>
-          <p class="card-text">
-            Mateo Carreras (San Miguel de Tucumán, 17 de diciembre de 1999) es
-            un rugbista argentino que se desempeña como wing y juega en los
-            Newcastle Falcons de la inglesa Premiership Rugby. Es internacional
-            con los Pumas desde 2021
-          </p>
+    <div class="titulo">
+      <h1>Noticias</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 card-section">
+      <div class="card-news">
+        <div class="card">
+          <img
+            src="../assets/rugbyimages/cumpleañoslawn.jpg"
+            class="card-img-top"
+            alt="cumpleanos lawn"
+          />
+          <div class="card-body">
+            <h5 class="card-title">LAWN TENNIS CUMPLE 109 AÑOS</h5>
+            <p class="card-text">
+              Los Benjamines del Parque incorporaron el rugby en 1961. El club
+              fue fundado el 14 de abril de 1915.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card2">
-        <div class="cardrugby2">
-          <h5 class="card-title">Noticia</h5>
-          <h6 class="card-subtitle">Selección nacional</h6>
-          <p class="card-text">
-            Representó a los Pumitas dos años y jugó el Campeonato Mundial
-            Juvenil, en las ediciones de Francia 2018 (quinto puesto) y
-            Argentina 2019 (cuarto puesto). Representó a los Pumas Seven y con
-            ellos disputó cuatro etapas de la Serie Mundial 2018-19. Además,
-            también jugó con Argentina XV y ganó con ella el Sudamericano de
-            Rugby A 2020.
-          </p>
+      <div class="card-news">
+        <div class="card">
+          <img
+            src="../assets/rugbyimages/torneo anual.jpg"
+            class="card-img-top"
+            alt="torneo anual"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Torneo Anual - Primera 2024</h5>
+            <p class="card-text">
+              Así están las Posiciones de las divisiones Primera
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="card-news">
+        <div class="card">
+          <img
+            src="../assets/rugbyimages/naranjitas entrenamiento.jpg"
+            class="card-img-top"
+            alt="Practica Naranjitas"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Primera Practica Seleccionado Naranjitas</h5>
+            <p class="card-text">
+              Primera práctica de la Academia de la URT. Con la presencia de 35
+              jugadores y el staff técnico, y dirigencial, en Lawn Tennis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-news">
+        <div class="card">
+          <img
+            src="../assets/rugbyimages/gana argentina.jpg"
+            class="card-img-top"
+            alt="Argentina Inglaterra"
+          />
+          <div class="card-body">
+            <h5 class="card-title">¡Argentina gana contra Inglaterra!</h5>
+            <p class="card-text">
+              Los Pumas cerraron el encuentro con victoria sobre el equipo
+              Inglés , con un marcador de 30 a 29.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Video y Mapa -->
 
-    <iframe
-      class="youtubevideo"
-      width="660"
-      height="415"
-      src="https://www.youtube.com/embed/rHqrgE6WmbU?si=fLw8WW27cc9YXPez"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+    <div class="social">
+      <iframe class="youtubevideo"
+        width="660"
+        height="415"
+        src="https://www.youtube.com/embed/iei3YkJVOT4?si=DlkF6LihJ2yLuMju"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
 
-    <iframe
-      class="mapaurt"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.600568863589!2d-65.19455208990945!3d-26.820844189272695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1fc11720e1%3A0x10dfdb32d1a56ad6!2sUni%C3%B3n%20de%20Rugby%20de%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1714262707942!5m2!1ses!2sar"
-      width="660"
-      height="415"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-
+      <iframe
+        class="mapaurt"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.600568863589!2d-65.19455208990945!3d-26.820844189272695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1fc11720e1%3A0x10dfdb32d1a56ad6!2sUni%C3%B3n%20de%20Rugby%20de%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1714262707942!5m2!1ses!2sar"
+        width="660"
+        height="415"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    
     <!-- Carousel Sponsors -->
 
     <div class="carousel-sponsors">
       <div class="logos-slide">
-        <img
-          src="https://img.offers-cdn.net/assets/uploads/stores/ar/logos/200x72/marcantonio.png"
-          alt=""
-        />
-        <img
-          src="https://media.licdn.com/dms/image/C4E1BAQGqeB2-o_zTnQ/company-background_1536_768/0/1584061781546?e=2147483647&v=beta&t=YZbu2a7_aLcWIroNobkHP6rph1OHfXUiu8N3Cq3z-aA"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2jWTfSEb-zAb1hzyrTJ1FeQJ4xC6M0pCS8bLSlHMOQ&s"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxTgvHE0Zrx1S6G3LrccDwXUMav5QuWfjIYzDZ6tNQzg&s"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FYNqlgzuc3psmKF-yagqhAcidg0Wkh4540x6Qes00g&s"
-          alt=""
-        />
-        <img
-          src="https://media.licdn.com/dms/image/C4D1BAQHCkPYX_bouEg/company-background_10000/0/1583579436476/palpitos24_cover?e=2147483647&v=beta&t=nf8cTcn8G7UVwXpDmDLa9VZ9J1qvpFy7zujO139ZXyw"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mOsjf90efI0RtSqftiLCs_pxgE1cabUAhacUltIF6A&s"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoegc1mtjwTw434XfCS3RCyK74x_EHZtxaQqHgiZVVrQ&s"
-          alt=""
-        />
-        <img
-          src="https://pbs.twimg.com/media/By40tOaIIAMtCjv.jpg:large"
-          alt=""
-        />
+        <img src="../assets/rugbyimages/logo-brookmotors.png" alt="" />
+        <img src="../assets/rugbyimages/logo-budweiser.png" alt="" />
+        <img src="../assets/rugbyimages/logo-directv.png" alt="" />
+        <img src="../assets/rugbyimages/logo-jeep.png" alt="" />
+        <img src="../assets/rugbyimages/logo-lagaceta.png" alt="" />
+        <img src="../assets/rugbyimages/logo-macro.png" alt="" />
+        <img src="../assets/rugbyimages/logo-palpitos.png" alt="" />
+        <img src="../assets/rugbyimages/logo-procer.png" alt="" />
       </div>
       <div class="logos-slide">
-        <img
-          src="https://img.offers-cdn.net/assets/uploads/stores/ar/logos/200x72/marcantonio.png"
-          alt=""
-        />
-        <img
-          src="https://media.licdn.com/dms/image/C4E1BAQGqeB2-o_zTnQ/company-background_1536_768/0/1584061781546?e=2147483647&v=beta&t=YZbu2a7_aLcWIroNobkHP6rph1OHfXUiu8N3Cq3z-aA"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2jWTfSEb-zAb1hzyrTJ1FeQJ4xC6M0pCS8bLSlHMOQ&s"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxTgvHE0Zrx1S6G3LrccDwXUMav5QuWfjIYzDZ6tNQzg&s"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FYNqlgzuc3psmKF-yagqhAcidg0Wkh4540x6Qes00g&s"
-          alt=""
-        />
-        <img
-          src="https://media.licdn.com/dms/image/C4D1BAQHCkPYX_bouEg/company-background_10000/0/1583579436476/palpitos24_cover?e=2147483647&v=beta&t=nf8cTcn8G7UVwXpDmDLa9VZ9J1qvpFy7zujO139ZXyw"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mOsjf90efI0RtSqftiLCs_pxgE1cabUAhacUltIF6A&s"
-          alt=""
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoegc1mtjwTw434XfCS3RCyK74x_EHZtxaQqHgiZVVrQ&s"
-          alt=""
-        />
-        <img
-          src="https://pbs.twimg.com/media/By40tOaIIAMtCjv.jpg:large"
-          alt=""
-        />
+        <img src="../assets/rugbyimages/logo-brookmotors.png" alt="" />
+        <img src="../assets/rugbyimages/logo-budweiser.png" alt="" />
+        <img src="../assets/rugbyimages/logo-directv.png" alt="" />
+        <img src="../assets/rugbyimages/logo-jeep.png" alt="" />
+        <img src="../assets/rugbyimages/logo-lagaceta.png" alt="" />
+        <img src="../assets/rugbyimages/logo-macro.png" alt="" />
+        <img src="../assets/rugbyimages/logo-palpitos.png" alt="" />
+        <img src="../assets/rugbyimages/logo-procer.png" alt="" />
       </div>
     </div>
 
