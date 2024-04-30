@@ -1,48 +1,48 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
+body {
+  background: linear-gradient(  #FF5400, white, white);
+  font-family: "Open Sans", sans-serif !important;
 }
-body{
-background: linear-gradient(180deg, rgba(34,51,59,1) 0%, rgba(255,255,255,1) 70%);
-}
+
 /* NAV */
 .navegador {
-display: flex;
-flex-direction: column;
-background-color: #22333b;
+  display: flex;
+  flex-direction: column;
+  background-color: #FF5400;
 }
+
 nav {
-background-color: #22333b;
+  background-color: #FF5400;
 }
+
 .navegador a {
-font-size: 30px;
-margin-right: 60px;
-text-decoration: none;
-color: rgb(255, 255, 255);
-margin-top: -3px;
+  font-size: 25px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: -3px;
 }
 .menu_list {
-margin-top: 0%;
-text-align: center;
-margin-left: 1300px;
-margin-top: -70px;
+  margin-top: 0%;
+  text-align: center;
+  margin-left: 1300px;
+  margin-top: -70px;
 }
+
 .navbar-toggler {
-border-color: white; /* Color del borde del botón */
+  border-color: white; 
 }
+
 .fas {
-color: white;
+  color: white;
 }
+
 .dropdown-menu {
-background-color: #22333b;
-list-style: none;
-border-color: #22333b !important;
+  background-color: #FF5400;
+  list-style: none;
+  border-color: #FF5400 !important;
 }
-.dropdown-item {
-text-align: center;
-margin: 10px;
-}
+
+
 /*BANNER HOCKEY*/
 .banner-hockey {
 display: flex;
@@ -50,20 +50,28 @@ justify-content: center;
 background-image: url('../assets/assets-hockey/atah3.png'); 
 background-size: cover;
 background-position: center;
-padding-bottom: 570px;
+padding-bottom: 700px;
 width: 100%;
 }
 
 .banner-hockey img{
 width: 100%;
 }
+
+/* media query banner */
+@media (max-width: 768px) {
+  .banner-hockey {
+    padding: 215px; 
+  }
+}
+
 /*CAROUSEL*/
 .carousel-news{
 height: 600px;
 margin: 25px 0 25px 0;
 }
 .carousel-news img{
-height: 600px;
+height: 700px;
 object-fit: cover;
 }
 .carousel-news a{
@@ -73,9 +81,24 @@ color: white;
 background-color: black;
 opacity: 0.8;
 }
+
+/* media query carousel */
+@media (max-width: 768px) {
+  .carousel-news {
+    height: 300px;
+    margin: 25px 0;
+  }
+
+  .carousel-news img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 /*CARDS SECCION*/
 .card-section{
-margin-top: 50px;
+margin-top: 130px;
 margin-bottom: 150px;
 display: flex;
 justify-content: center;
@@ -98,36 +121,59 @@ transform: scale(1.05);
 height: 150px;
 }
 
+@media (max-width: 768px) {
+  .card-section {
+    margin-top: -90px;
+  }
+}
+
 /*SOCIAL*/
 .map{
-height: 400px;
+  height: 400px;
 }
 .social{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .social iframe{
-border-radius: 25px;
-height: 400px;
+  border-radius: 25px;
+  height: 400px;
 }
 .comunication{
-margin-left: -20px;
-padding-right: 10px;
+  margin-left: -20px;
+  padding-right: 10px;
 }
 .comunication-container{
-display: flex;
-align-items: center;
-background-color: rgba(230, 230, 230, 0.582);
-border-radius: 25px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(230, 230, 230, 0.582);
+  border-radius: 25px;
 }
 .comunication a{
-color: black;
+  color: black;
 }
 .comunication li{
-list-style: none;
-text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
+
+/*media query iframes*/
+
+@media (max-width: 768px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .video,
+  .map {
+    width: auto;
+    height: auto;
+  }
+}
+
 /*CARRUSEL DE SPONSORS*/
 @keyframes slide{
 from{
@@ -154,11 +200,9 @@ z-index: 2;
 }
 .carousel-sponsors:before { 
 left: 0;
-background: linear-gradient(to left, rgba(255,255,255,0), #ffffff);
 }
 .carousel-sponsors:after{
 right: 0;
-background: linear-gradient(to right, rgba(255,255,255,0), #ffffff);
 }
 .carousel-sponsors{
 animation-play-state: paused;
@@ -180,7 +224,7 @@ padding: 200px;
 }
 
 footer {
-background-color: #22333b;
+  background: linear-gradient(white,#FF5400, #FF5400);
 padding: 40px 0 20px;
 }
 /* Estilos para el logo */

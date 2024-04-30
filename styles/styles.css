@@ -13,47 +13,48 @@
     }
 }
 body{
-    background: linear-gradient(#faeee3, #22333B, #22333b, #22333b);
+  background: linear-gradient( #C6AC8F, #5E503F, #C6AC8F, #C6AC8F);
     font-family: "Open Sans", sans-serif !important;
  }
- /* NAV */
+ 
+/* NAV */
 .navegador {
-    display: flex;
-    flex-direction: column;
-    background-color: #22333B;
-  }
-  
-  nav {
-    background-color: #22333B;
-  }
-  
-  .navegador a {
-    font-size: 25px;
-    margin-right: 60px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-top: -3px;
-  }
-  .menu_list {
-    margin-top: 0%;
-    text-align: center;
-    margin-left: 1300px;
-    margin-top: -70px;
-  }
-  
-  .navbar-toggler {
-    border-color: rgb(255, 255, 255); 
-  }
-  
-  .fas {
-    color: rgb(255, 255, 255);
-  }
-  
-  .dropdown-menu {
-    background-color: #22333B!important;
-    list-style: none;
-    border-color: #22333B!important;
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: #5E503F;
+}
+
+nav {
+  background-color: #5E503F;
+}
+
+.navegador a {
+  font-size: 25px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: -3px;
+}
+.menu_list {
+  margin-top: 0%;
+  text-align: center;
+  margin-left: 1300px;
+  margin-top: -70px;
+}
+
+.navbar-toggler {
+  border-color: white !important; 
+}
+
+.fas {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #5E503F !important;
+  list-style: none;
+  border-color: #5E503F !important;
+}
  /* BODY */
  .titulo{
      text-align: center;
@@ -66,7 +67,7 @@ body{
  }
  .titulo{
      color: #fff;
-     background-image: linear-gradient(-250deg, #000000 0%, #535151 50%, #050505 100%);
+     background-image: linear-gradient(-250deg, #0f0f0f 0%, #e7e3e3 50%, #0f0f0f  100%);
      background-size: auto auto;
      background-clip: border-box;
      background-size: 200% auto;
@@ -186,11 +187,9 @@ body{
   }
   .carousel-sponsors:before { 
     left: 0;
-    background: linear-gradient(to left, rgba(255,255,255,0), #233040);
   }
   .carousel-sponsors:after{
     right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0), #233040);
   }
   .carousel-sponsors{
     animation-play-state: paused;
@@ -217,10 +216,10 @@ body{
       
 }
     
-footer{
-        background-color: #233040;
-        padding: 40px 0 20px; 
-    }
+footer {
+  background-color: #C6AC8F;
+  padding: 40px 0 20px;
+}
     
 /* Estilos para el logo */
 .logo-verde img{
@@ -247,14 +246,14 @@ footer{
 }
     
 .red-social a{
-        color: antiquewhite;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         margin: 0 15px; 
         font-size: 20px; 
 }
     
 .nombre {
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: 14px; 
         display: block;
         margin-bottom: 5px; 
@@ -263,7 +262,7 @@ footer{
     
 .grupo{
         text-align: center;
-        color: white;
+        color: rgb(0, 0, 0);
         margin-top: 20px; 
         font-size: 18px; 
 }
