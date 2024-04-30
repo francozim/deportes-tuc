@@ -1,0 +1,206 @@
+
+body{
+    background: linear-gradient(#EAE0D5, #22333B, #22333B);
+    color: white;
+  }
+/* NAV */
+.navegador{
+    display: flex;
+    flex-direction: column;
+    background-color: #22333B;
+  }
+  nav{
+   background-color: #22333B;
+  }
+  .navbar-brand img{
+    border-radius: 30px;
+  }
+  .navegador a {
+    font-size: 30px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: -3px;
+  }
+
+
+.banner-futbol img{
+    height: 100%;
+    width: 100%; 
+  }
+
+/*CAROUSEL*/
+.carousel-news{
+    height: 600px;
+    margin: 0;
+  }
+  .carousel-news img{
+    height: 600px;
+    object-fit: cover;
+  }
+  
+
+  /*CARDS SECCION*/
+.card-section{
+    margin-top: 20px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-news{
+    height: 400px;
+    width: 300px;
+    margin: 25px; 
+    margin-bottom: 100px;
+  }
+  .card-news img{
+    height: 350px;
+  }
+  .card-body{
+    height: 150px;
+  }
+
+  /*iframes*/
+  .social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video, .map {
+    width: 600px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .social {
+        display: block; 
+    }
+    
+    .video, .map {
+        width: auto; 
+        height: auto; 
+    }
+}
+
+/*CARRUSEL DE SPONSORS*/
+
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carousel-sponsors{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.carousel-sponsors:before { 
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #233040);
+}
+.carousel-sponsors:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #233040);
+}
+.carousel-sponsors{
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+.logos-slide img{
+  border-radius: 5px;
+  height: 50px;
+  margin: 0 40px;
+}
+  
+/* footer */
+  
+    /* Estilos generales del footer */
+    .img-footer {
+      background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+      background-size: cover;
+      background-position: center ;
+      padding: 200px;
+    
+  }
+  
+  footer{
+      background-color: #233040;
+      padding: 40px 0 20px; 
+  }
+  
+  /* Estilos para el logo */
+  .logo-verde img{
+      display: block; 
+      margin: 0 auto; 
+      border-radius: 50%; 
+      height: 140px;
+      width: 140px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+  }
+  
+  .red-social{
+      display: flex;
+      justify-content: center; 
+      margin-top: 20px;
+      margin-bottom: 60px;
+  }
+  
+  .red-social-item {
+      text-align: center;
+      margin: 0 15px; 
+     
+  }
+  
+  .red-social a{
+      color: antiquewhite;
+      text-decoration: none;
+      margin: 0 15px; 
+      font-size: 20px; 
+  }
+  
+  .nombre {
+      color: white;
+      font-size: 14px; 
+      display: block;
+      margin-bottom: 5px; 
+      font-size: 17px;
+  }
+  
+  .grupo{
+      text-align: center;
+      color: white;
+      margin-top: 20px; 
+      font-size: 18px; 
+  }
+  
+  @media (max-width: 768px) {
+      .red-social {
+          flex-direction: column; 
+          align-items: center; 
+          margin-top: 10px; 
+      }
+  
+      .red-social a {
+          margin: 5px 0; 
+      }
+  }
+  
+ 

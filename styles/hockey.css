@@ -1,0 +1,304 @@
+body {
+  background: linear-gradient(  #FF5400, white, white);
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* NAV */
+.navegador {
+  display: flex;
+  flex-direction: column;
+  background-color: #FF5400;
+}
+
+nav {
+  background-color: #FF5400;
+}
+
+.navegador a {
+  font-size: 25px;
+  margin-right: 60px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: -3px;
+}
+.menu_list {
+  margin-top: 0%;
+  text-align: center;
+  margin-left: 1300px;
+  margin-top: -70px;
+}
+
+.navbar-toggler {
+  border-color: white; 
+}
+
+.fas {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #FF5400;
+  list-style: none;
+  border-color: #FF5400 !important;
+}
+
+
+/*BANNER HOCKEY*/
+.banner-hockey {
+display: flex;
+justify-content: center;
+background-image: url('../assets/assets-hockey/atah3.png'); 
+background-size: cover;
+background-position: center;
+padding-bottom: 700px;
+width: 100%;
+}
+
+.banner-hockey img{
+width: 100%;
+}
+
+/* media query banner */
+@media (max-width: 768px) {
+  .banner-hockey {
+    padding: 215px; 
+  }
+}
+
+/*CAROUSEL*/
+.carousel-news{
+height: 600px;
+margin: 25px 0 25px 0;
+}
+.carousel-news img{
+height: 700px;
+object-fit: cover;
+}
+.carousel-news a{
+color: white;
+}
+.carousel-caption{
+background-color: black;
+opacity: 0.8;
+}
+
+/* media query carousel */
+@media (max-width: 768px) {
+  .carousel-news {
+    height: 300px;
+    margin: 25px 0;
+  }
+
+  .carousel-news img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*CARDS SECCION*/
+.card-section{
+margin-top: 130px;
+margin-bottom: 150px;
+display: flex;
+justify-content: center;
+width: 100%;
+}
+.card-news{
+height: 400px;
+width: 300px;
+margin: 25px; 
+margin-bottom: 150px;
+}
+.card-news img{
+height: 350px;
+margin: 10px solid black;
+}
+.card-news:hover{
+transform: scale(1.05);
+}
+.card-body{
+height: 150px;
+}
+
+@media (max-width: 768px) {
+  .card-section {
+    margin-top: -90px;
+  }
+}
+
+/*SOCIAL*/
+.map{
+  height: 400px;
+}
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.social iframe{
+  border-radius: 25px;
+  height: 400px;
+}
+.comunication{
+  margin-left: -20px;
+  padding-right: 10px;
+}
+.comunication-container{
+  display: flex;
+  align-items: center;
+  background-color: rgba(230, 230, 230, 0.582);
+  border-radius: 25px;
+}
+.comunication a{
+  color: black;
+}
+.comunication li{
+  list-style: none;
+  text-decoration: none;
+}
+
+/*media query iframes*/
+
+@media (max-width: 768px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .video,
+  .map {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*CARRUSEL DE SPONSORS*/
+@keyframes slide{
+from{
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-100%);
+}
+}
+.carousel-sponsors{
+overflow: hidden;
+padding: 60px 0;
+white-space: nowrap;
+position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+position: absolute;
+top: 0;
+width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+.carousel-sponsors:before { 
+left: 0;
+}
+.carousel-sponsors:after{
+right: 0;
+}
+.carousel-sponsors{
+animation-play-state: paused;
+}
+.logos-slide {
+display: inline-block;
+animation: 30s slide infinite linear;
+}
+.logos-slide img{
+height: 50px;
+margin: 0 40px;
+}
+/* FOOTER */
+.img-footer {
+background-image: url("../assets/assetsprincipal/34b18912-b8ac-49a1-ad29-c3a276b240b7-removebg-preview.png");
+background-size: cover;
+background-position: center;
+padding: 200px;
+}
+
+footer {
+  background: linear-gradient(white,#FF5400, #FF5400);
+padding: 40px 0 20px;
+}
+/* Estilos para el logo */
+.logo-verde img {
+display: block;
+margin: 0 auto;
+border-radius: 50%;
+height: 140px;
+width: 140px;
+margin-top: 10px;
+margin-bottom: 60px;
+}
+.red-social {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 60px;
+}
+.red-social-item {
+text-align: center;
+margin: 0 15px;
+}
+.red-social a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+margin: 0 15px;
+font-size: 20px;
+}
+.nombre {
+color: white;
+font-size: 14px;
+display: block;
+margin-bottom: 5px;
+font-size: 17px;
+}
+.grupo {
+text-align: center;
+color: white;
+margin-top: 20px;
+font-size: 18px;
+}
+@media (max-width: 768px) {
+.red-social {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.red-social a {
+  margin: 5px 0;
+}
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 768px) {
+.row{
+  width: 100%;
+}
+.banner-basquet{
+  background-image: url(../assets/assets-basquet/federación-logo.jpg);
+  background-size: cover;
+  width: 360px;
+}
+.comunication-container{
+  display: flex;
+  flex-direction: column;
+}
+.social{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.video{
+  margin-bottom: 25px;
+}
+
+}
