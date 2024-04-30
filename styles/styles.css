@@ -14,56 +14,46 @@
 }
 body{
     background: linear-gradient(#faeee3, #22333B, #22333b, #22333b);
-    font-family: "Jacquard 12 Charted", system-ui ;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Open Sans", sans-serif !important;
  }
  /* NAV */
-.navegador{
-     display: flex;
-     flex-direction: column;
-     background-color: #22333B;
- }
-
-nav{
+.navegador {
+    display: flex;
+    flex-direction: column;
     background-color: #22333B;
-}
- .navbar-brand img{
-     border-radius: 30px;
- }
- .navbar-toggler {
-    border-color: white !important; 
+  }
+  
+  nav {
+    background-color: #22333B;
+  }
+  
+  .navegador a {
+    font-size: 25px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: -3px;
+  }
+  .menu_list {
+    margin-top: 0%;
+    text-align: center;
+    margin-left: 1300px;
+    margin-top: -70px;
+  }
+  
+  .navbar-toggler {
+    border-color: rgb(255, 255, 255); 
   }
   
   .fas {
-    color: white;
+    color: rgb(255, 255, 255);
   }
- .navegador a {
-     font-size: 30px;
-     margin-right: 60px;
-     text-decoration: none;
-     color: rgb(255, 255, 255);
-     margin-top: -3px;
- }
- .navegador ul a:hover{
-    transition: 0.2s;
-    transform:scale(1.1);
-    border: 2px solid rgb(255, 255, 255);
-    color: #f3f3f3;
-    border-top: #f3f3f3;
-    border-left: #f3f3f3;
-    border-right: #f3f3f3;
- }
- .navegador a img:hover{
-    transition: 0.2s;
-    transform:scale(1.2);
- }
-
-.data-container{
-     display:flex;
-     justify-content:center;
-     align-items:center;
- }
+  
+  .dropdown-menu {
+    background-color: #22333B!important;
+    list-style: none;
+    border-color: #22333B!important;
+  }
  /* BODY */
  .titulo{
      text-align: center;

@@ -4,6 +4,7 @@
     box-sizing: content-box;
 }
 body{
+   font-family: "Open Sans", sans-serif !important;
   background: linear-gradient(rgb(25,145,201),rgb(255, 255, 255), rgb(255, 255, 255));
 }
 /* NAV */
@@ -12,11 +13,13 @@ body{
   flex-direction: column;
   background-color: #1891c9;
 }
+
 nav {
   background-color: #1891c9;
 }
+
 .navegador a {
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 60px;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -28,20 +31,19 @@ nav {
   margin-left: 1300px;
   margin-top: -70px;
 }
+
 .navbar-toggler {
-  border-color: white; /* Color del borde del botón */
+  border-color: white; 
 }
+
 .fas {
   color: white;
 }
+
 .dropdown-menu {
-  background-color: #22333b;
+  background-color: #5E503F;
   list-style: none;
-  border-color: #22333b !important;
-}
-.dropdown-item {
-  text-align: center;
-  margin: 10px;
+  border-color: #5E503F !important;
 }
 /*BANNER BASQUET*/
 .banner-basquet {
