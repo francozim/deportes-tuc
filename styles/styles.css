@@ -13,7 +13,7 @@
     }
 }
 body{
-  background: linear-gradient( #C6AC8F, #5E503F, #C6AC8F, #C6AC8F);
+  background: linear-gradient( #C6AC8F, #5E503F, #C6AC8F, #C6AC8F, white, white);
     font-family: "Open Sans", sans-serif !important;
  }
  
@@ -217,7 +217,7 @@ nav {
 }
     
 footer {
-  background-color: #C6AC8F;
+  background: linear-gradient(white, #C6AC8F, #5E503F);
   padding: 40px 0 20px;
 }
     
