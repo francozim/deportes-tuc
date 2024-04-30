@@ -1,72 +1,260 @@
-.navegador{
+/* Body */
+
+body{
+    background: linear-gradient(#ff7300, #995822, #172366, #0e0f49);
+    font-family: "Jacquard 12 Charted", system-ui;
+}
+
+/* Navegador */
+
+.navegador {
     display: flex;
     flex-direction: column;
+    background-color: #ff7300;
 }
-
+  
+nav {
+    background-color: #ff7300;
+}
+  
 .navegador a {
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 60px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-top: -3px;
 }
 
-.carouselequiposrugby{
+.menu_list {
+    margin-top: 0%;
+    text-align: center;
+    margin-left: 1300px;
+    margin-top: -70px;
+}
+  
+.navbar-toggler {
+    border-color: white; 
+}
+  
+.fas {
+    color: white;
+}
+  
+.dropdown-menu {
+    background-color: #ff7300;
+    list-style: none;
+    border-color: #ff7300 !important;
+}
+
+.dropdown-item {
+    text-align: center;
+    margin: 10px;
+}
+
+/* banner */
+  
+.bannerrugby {
     display: flex;
     justify-content: center;
-    
-}
-.carousel-item img {
-    object-fit: contain;
-    width: 1300px;
-    height: 400px;
-}
-
-.carousel-item h5 {
-    text-align: center;
-    margin-top: 50px;
-    font-weight: bold;
+    background-image: url(../assets/rugbyimages/urt3.jpg); 
+    background-size: cover;
+    background-position: center ;
+    padding: 300px;
+    width: 100%;
 }
 
-.titulosectionrugby {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+/* Carousel */
 
+.carousel-news{
+    height: 600px;
+    margin: 25px 0 25px 0;
 }
 
-.carousel-control-prev {
-    margin-top: 200px;
+.carousel-news img{
+    height: 600px;
+    object-fit: cover;
 }
 
-.carousel-control-next {
-    margin-top: 200px;
+.carousel-news a{
+    color: white;
 }
 
-.carousel-control-prev-icon {
+.carousel-caption{
     background-color: black;
-    border-radius: 10px 10px;
+    opacity: 0.8;
 }
 
-.carousel-control-next-icon {
-    background-color: black;
-    border-radius: 10px 10px;
-}
 
-.infojugador-noticiarugby {
+/*Cards Informacion*/
+
+.titulo {
     display: flex;
+    justify-content: center;
+    margin: 100px;
+    color: white;
 }
 
-.imagenjugador img {
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 150px;
+.card-section{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.infojugador { 
-    margin-top: 250px;
-    margin-left: 100px;
+.card-news{
+    height: 500px;
+    width: 350px;
+    margin-bottom: 25px; 
+    margin-top: 0px;
 }
 
-.infojugador h1{
+.card-news img{
+    height: 350px;
+    margin: 10px solid black;
+}
+
+.card-news:hover{
+    transform: scale(1.05);
+}
+
+.card-body{
+    height: 150px;
+    background-color: #EAE0D5;
+}
+  
+/*Video y Mapa*/
+  .social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .social iframe{
+    border-radius: 25px;
+    height: 400px;
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+/*Carousel Sponsors*/
+
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.carousel-sponsors{
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.carousel-sponsors:before,
+.carousel-sponsors:after{
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.carousel-sponsors:before { 
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #08103b);
+}
+.carousel-sponsors:after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #08103b);
+}
+.carousel-sponsors{
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+.logos-slide img{
+  border-radius: 5px;
+  height: 80px;
+  margin: 0 40px;
+}
+
+/*Footer y diseño*/
+
+/*Estilos generales*/
+
+.img-footer {
+    background-image: url('../assets/assetsprincipal/silueta-motañas-removebg-preview.png'); 
+    background-size: cover;
+    background-position: center ;
+    padding: 200px;
+  
+}
+
+footer{
+    background-color: #0e0f49;
+    padding: 40px 0 20px; 
+}
+
+/*Estilos de Logo*/
+
+.logo-verde img{
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 50%; 
+    height: 140px;
+    width: 140px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.red-social{
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.red-social-item {
     text-align: center;
+    margin: 0 15px; 
+   
 }
+
+.red-social a{
+    color: antiquewhite;
+    text-decoration: none;
+    margin: 0 15px; 
+    font-size: 20px; 
+}
+
+.nombre {
+    color: white;
+    font-size: 14px; 
+    display: block;
+    margin-bottom: 5px; 
+    font-size: 17px;
+}
+
+.grupo{
+    text-align: center;
+    color: white;
+    margin-top: 20px; 
+    font-size: 18px; 
+}
+
+@media (max-width: 768px) {
+    .red-social {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .red-social a {
+        margin: 5px 0; 
+    }
+}
+
+

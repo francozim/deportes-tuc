@@ -4,19 +4,22 @@
     box-sizing: content-box;
 }
 body{
-  background: linear-gradient(180deg, rgba(34,51,59,1) 0%, rgba(255,255,255,1) 70%);
+   font-family: "Open Sans", sans-serif !important;
+  background: linear-gradient(rgb(25,145,201),rgb(255, 255, 255), rgb(255, 255, 255));
 }
 /* NAV */
 .navegador {
   display: flex;
   flex-direction: column;
-  background-color: #22333b;
+  background-color: #1891c9;
 }
+
 nav {
-  background-color: #22333b;
+  background-color: #1891c9;
 }
+
 .navegador a {
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 60px;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -28,20 +31,19 @@ nav {
   margin-left: 1300px;
   margin-top: -70px;
 }
+
 .navbar-toggler {
-  border-color: white; /* Color del borde del botón */
+  border-color: white; 
 }
+
 .fas {
   color: white;
 }
+
 .dropdown-menu {
-  background-color: #22333b;
+  background-color: #5E503F;
   list-style: none;
-  border-color: #22333b !important;
-}
-.dropdown-item {
-  text-align: center;
-  margin: 10px;
+  border-color: #5E503F !important;
 }
 /*BANNER BASQUET*/
 .banner-basquet {
@@ -178,9 +180,8 @@ nav {
   background-position: center;
   padding: 200px;
 }
-
 footer {
-  background-color: #22333b;
+  background: linear-gradient(rgb(255, 255, 255), rgb(25,145,201),rgb(25,145,201));
   padding: 40px 0 20px;
 }
 /* Estilos para el logo */
