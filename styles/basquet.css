@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
 body{
    font-family: "Open Sans", sans-serif !important;
   background: linear-gradient(rgb(25,145,201),rgb(255, 255, 255), rgb(255, 255, 255));
@@ -41,9 +36,9 @@ nav {
 }
 
 .dropdown-menu {
-  background-color: #5E503F;
+  background-color: #1891c9;
   list-style: none;
-  border-color: #5E503F !important;
+  border-color: #1891c9 !important;
 }
 /*BANNER BASQUET*/
 .banner-basquet {
@@ -52,13 +47,22 @@ nav {
   background-image: url('../assets/assets-basquet/banner-basquet.jpg'); 
   background-size: cover;
   background-position: center;
-  padding-bottom: 570px;
+  padding-bottom: 660px;
   width: 100%;
 }
 
 .banner-basquet img{
   width: 100%;
+  padding: 600px;
 }
+
+/* media query banner */
+@media (max-width: 768px) {
+  .banner-basquet {
+    padding: 215px; 
+  }
+}
+
 /*CAROUSEL*/
 .carousel-news{
   height: 600px;
@@ -75,6 +79,21 @@ nav {
   background-color: black;
   opacity: 0.8;
 }
+
+/* media query carousel */
+@media (max-width: 768px) {
+  .carousel-news {
+    height: 300px;
+    margin: 25px 0;
+  }
+
+  .carousel-news img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 /*CARDS SECCION*/
 .card-section{
   margin-top: 50px;
@@ -130,6 +149,23 @@ nav {
   list-style: none;
   text-decoration: none;
 }
+
+/*media query iframes*/
+
+@media (max-width: 768px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .video,
+  .map {
+    width: auto;
+    height: auto;
+  }
+}
+
 /*CARRUSEL DE SPONSORS*/
 @keyframes slide{
   from{
